@@ -1,0 +1,157 @@
+.hero {
+
+  // .hero__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    background-image: url('./../img/hero/hero-bg-1.png');
+    background-position: right center;
+    /* x y */
+    background-repeat: no-repeat;
+    background-size: 60%;
+
+    @include mediaBg() {
+      background-image: url('./../img/hero/hero-bg-1@2x.png');
+    }
+
+    @include mobile {
+      background-position: right top;
+      background-size: 55%;
+    }
+
+    @include small-mobile {
+      background-image: none;
+      flex-direction: column;
+
+    }
+  }
+
+  // .hero__info
+
+  &__info {
+    width: 60%;
+    padding: 60px 0;
+
+    @include mobile {
+      padding: 40px 0;
+    }
+
+    @include small-mobile {
+      width: 100%;
+      align-items: center;
+      padding: 0;
+    }
+  }
+
+  // .hero__top
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    @include mobile {
+      row-gap: 20px;
+    }
+
+    @include small-mobile {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  // .hero__title
+
+  &__title {
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 92px;
+    line-height: 100%;
+    color: var(--white-color);
+
+    span {
+      color: var(--green);
+    }
+
+    @include tablet {
+      font-size: 72px;
+    }
+
+    @include mobile {
+      font-size: 54px;
+    }
+  }
+
+  // .hero__text
+
+  &__text {
+    max-width: 360px;
+    font-size: 20px;
+    line-height: 120%;
+    color: #353944;
+  }
+
+  // .hero__btn
+
+  &__btn {
+    width: 260px;
+    height: 60px;
+
+    @include small-mobile {
+      width: 100%;
+    }
+  }
+
+  // .hero__bottom
+
+  &__bottom {
+    display: none;
+  }
+
+  // .hero__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  // .hero__item
+
+  &__item {}
+
+  // .hero__picture
+
+  &__picture {}
+}
+
+.section {}
+
+.container {}
+
+.btn-primary {}
+
+
+
+.icon--trustpilot {
+  fill: var(--green);
+  stroke: var(--green);
+}
+
+.icon--Product {
+
+  // .icon--Product_Hunt
+
+  &_Hunt {}
+}
+
+.icon--G2 {
+
+  // .icon--G2_Crowd
+
+  &_Crowd {}
+}

@@ -1,0 +1,113 @@
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(39, 39, 39);
+}
+
+body {
+  background-color: var(--page-bg);
+  background-image: url('../../img/page-bg.svg');
+  background-repeat: no-repeat;
+  color: var(--white-color);
+  font-family: var(--font-main);
+  text-wrap: balance;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: var(--link-color);
+}
+
+code {
+  background-color: #e9f1f6;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
+pre.code {
+  overflow-x: auto;
+  background-color: #e9f1f6;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.section {
+  margin: 160px 0;
+
+  &~.section {
+    margin: 80px 0;
+  }
+
+  @include tablet {
+    margin: 100px 0;
+
+    &~.section {
+      margin: 50px 0;
+    }
+  }
+
+  @include mobile {
+    margin: 80px 0;
+
+    &~.section {
+      margin: 40px 0;
+    }
+  }
+
+  @include small-mobile {
+    margin: 40px 0;
+
+    &~.section {
+      margin: 20px 0;
+    }
+  }
+}
+
+.section-head {
+  margin-bottom: 64px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+
+  @include small-mobile {
+    margin-bottom: 24px;
+  }
+}
+
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 20px;
+  background: var(--gradient-bg);
+  border-radius: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--white-color);
+
+  @media (hover:hover) {
+    &:hover {
+      animation: btnBg 0.5s linear;
+    }
+  }
+}
+
+@keyframes btnBg {
+  0% {
+    background: linear-gradient(226deg, #39d24e 0%, #7fb600 100%);
+  }
+
+  50% {
+    background: linear-gradient(226deg, #39d24e 0%, #7fb600 100%);
+  }
+
+  100% {
+    background: linear-gradient(226deg, #39d24e 0%, #7fb600 100%);
+  }
+}

@@ -1,0 +1,161 @@
+.blog {
+
+  // .blog__inner
+
+  &__inner {}
+
+  // .blog__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-bottom: 60px;
+
+    @include tablet {
+      column-gap: 20px;
+      row-gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .blog__item
+
+  &__item {
+    display: grid;
+  }
+
+  // .blog__link
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+
+    @media (hover:hover) {
+      &:hover {
+        .blog__label {
+          color: var(--green);
+        }
+      }
+    }
+
+    @include mobile {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  // .blog__picture
+
+  &__picture {
+    margin-bottom: 16px;
+    border-radius: 24px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 24px;
+      object-fit: cover;
+    }
+  }
+
+  // .blog__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 24px;
+
+    @include tablet {
+      row-gap: 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  // .blog__time
+
+  &__time {
+    min-height: 14px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--white-color);
+  }
+
+  // .blog__label
+
+  &__label {
+    font-family: var(--font-second);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--white-color);
+    transition: color 0.2s ease-in;
+
+    @include tablet {
+      font-size: 24px;
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  // .blog__text
+
+  &__text {
+    font-size: 16px;
+    line-height: 140%;
+    color: #9b9b9b;
+
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  // .blog__read
+
+  &__read {
+    margin-top: auto;
+    font-size: 16px;
+    line-height: 140%;
+    text-decoration: underline;
+    color: var(--green);
+  }
+
+  // .blog__btn
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 16px 36px;
+
+    border: 1px solid var(--white-color);
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    color: var(--white-color);
+    transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+
+    @media (hover:hover) {
+      &:hover {
+        background-color: var(--green);
+        border-color: var(--green);
+      }
+    }
+  }
+}

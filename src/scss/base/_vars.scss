@@ -1,0 +1,31 @@
+:root {
+  --container-width: 1500px;
+  --container-padding: 20px;
+
+  --font-main: "Golos Text", sans-serif;
+  --font-second: 'Magistral', sans-serif;
+  --font-titles: var(--font-second);
+
+  --page-bg: #080C17;
+  --white-color: #fff;
+  --text-color: #000;
+  --accent: #ac182c;
+  --link-color: #2578c8;
+  --gradient-bg: linear-gradient(226deg, #39d24e 0%, #7fb600 100%);
+  --dark-color: #04060b;
+  --light-green: #9cfa02;
+  --purple: #ba2cc3;
+  --main-yellow: #ffdd2e;
+  --green: #39d24e;
+  --dark-blue: #080c17;
+
+
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

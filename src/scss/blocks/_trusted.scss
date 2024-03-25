@@ -1,0 +1,255 @@
+.trusted {
+  overflow: hidden;
+
+  // .trusted__inner
+
+  &__inner {}
+
+  // .trusted__slider
+
+  &__slider {
+    height: 400px;
+    overflow: visible;
+
+    @include mobile {
+      height: 320px;
+    }
+
+    @include small-mobile {
+      height: auto;
+    }
+  }
+
+  // .trusted__slider-wrapper
+
+  &__slider-wrapper {}
+
+  // .trusted__slide
+
+  &__slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 120px;
+    padding: 72px 100px;
+    border-radius: 48px;
+    background-color: #0c1220;
+
+    @include mobile {
+      column-gap: 40px;
+      padding: 32px 48px;
+    }
+
+    @include small-mobile {
+      flex-direction: column;
+      row-gap: 24px;
+      padding: 24px;
+    }
+  }
+
+  // .trusted__slide-decor
+
+  &__slide-decor {
+    position: absolute;
+    right: 100px;
+    top: -50px;
+
+    @include small-mobile {
+      right: -10px;
+      top: -10px;
+    }
+  }
+
+  // .trusted__slide-persona
+
+  &__slide-persona {
+    flex: 0 0 180px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    @include mobile {
+      flex: 0 0 120px;
+    }
+
+    @include small-mobile {
+      flex: 0 1 auto;
+      align-items: center;
+    }
+  }
+
+  // .trusted__slide-picture
+
+  &__slide-picture {
+
+    img {
+      width: 160px;
+      height: 160px;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+
+    @include mobile {
+      img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+
+  // .trusted__slide-name
+
+  &__slide-name {
+    font-family: var(--font-second);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--white-color);
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  // .trusted__slide-position
+
+  &__slide-position {
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #8b8b8b;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  // .trusted__slide-info
+
+  &__slide-info {
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    max-height: 280px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include mobile {
+      row-gap: 16px;
+    }
+
+    @include small-mobile {
+      align-items: center;
+      text-align: center;
+      max-height: 100%;
+    }
+  }
+
+  // .trusted__slide-label
+
+  &__slide-label {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--white-color);
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  // .trusted__slide-descr
+
+  &__slide-descr {
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--white-color);
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  &__slider-btns {
+    position: relative;
+    margin: 0 auto;
+
+    @include small-mobile {
+      display: none;
+    }
+  }
+
+  // .trusted__slider-btn
+
+  &__slider-btn {
+    position: absolute;
+    top: -50%;
+    transform: translateY(-250%);
+    z-index: 2;
+    cursor: pointer;
+
+    @include mobile {
+      transform: translateY(-220%);
+    }
+  }
+
+  // .trusted__slider-btn--prev
+
+  &__slider-btn--prev {
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100px;
+    background-color: rgba(58, 165, 234, 0.2);
+    border-radius: 0 10rem 10rem 0;
+  }
+
+  // .trusted__slider-btn--next
+
+  &__slider-btn--next {
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100px;
+    background-color: rgba(58, 165, 234, 0.2);
+    border-radius: 10rem 0 0 10rem;
+  }
+}
+
+.icon {}
+
+.icon--trusted-slide-decor {
+  width: 106px;
+  height: 98px;
+  fill: var(--green);
+
+  @include small-mobile {
+    right: 40px;
+    height: 32px;
+  }
+}
+
+.icon--slide-arrow-left {
+  width: 48px;
+  height: 48px;
+  fill: transparent;
+  stroke: var(--white-color);
+}
+
+.icon--slide-arrow-right {
+  width: 48px;
+  height: 48px;
+  fill: transparent;
+  stroke: var(--white-color);
+}

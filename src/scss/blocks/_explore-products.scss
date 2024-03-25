@@ -1,0 +1,257 @@
+.explore-products {
+
+  // .explore-products__inner
+
+  &__inner {}
+
+  // .explore-products__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 40px;
+
+    @media (max-width: 1520px) {
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  // .explore-products__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px;
+    min-height: 456px;
+    background: #131a2c;
+    border-radius: 20px;
+
+    @media (hover:hover) {
+      &:hover {
+        background-color: #39d24e;
+
+        .explore-products__item-label {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      flex: 0 1 710px;
+      background-image: url('./../img/explore-products/Cash_Register.png');
+      background-position: right bottom;
+      /* x y */
+      background-repeat: no-repeat;
+
+      @include mediaBg() {
+        background-image: url('./../img/explore-products/Cash_Register@2x.png');
+      }
+
+      @media (max-width: 1520px) {
+        flex: 0 1 calc(50% - 20px);
+      }
+
+      @include small-mobile {
+        background-size: 50%;
+      }
+    }
+
+    &:nth-child(2) {
+      flex: 0 1 710px;
+      background-image: url('./../img/explore-products/Kvakomat 1.png');
+      background-position: right bottom;
+      /* x y */
+      background-repeat: no-repeat;
+
+      @include mediaBg() {
+        background-image: url('./../img/explore-products/Kvakomat 1@2x.png');
+      }
+
+      @media (max-width: 1520px) {
+        flex: 0 1 calc(50% - 20px);
+      }
+
+      @include small-mobile {
+        background-size: 50%;
+      }
+    }
+
+    &:nth-child(3) {
+      flex: 0 1 600px;
+      background-image: url('./../img/explore-products/Device.png');
+      background-position: right bottom;
+      /* x y */
+      background-repeat: no-repeat;
+
+      @include mediaBg() {
+        background-image: url('./../img/explore-products/Device@2x.png');
+      }
+
+      @media (max-width: 1520px) {
+        flex: 0 1 calc(40% - 20px);
+      }
+
+      @include small-mobile {
+        background-size: 45%;
+      }
+    }
+
+    &:nth-child(4) {
+      flex: 0 1 820px;
+      background-image: url('./../img/explore-products/Object.png');
+      background-position: right bottom;
+      /* x y */
+      background-repeat: no-repeat;
+
+      @include mediaBg() {
+        background-image: url('./../img/explore-products/Object@2x.png');
+      }
+
+      @media (max-width: 1520px) {
+        flex: 0 1 calc(60% - 20px);
+      }
+
+      @include small-mobile {
+        background-size: 45%;
+      }
+    }
+
+    &:nth-child(5) {
+      flex: 0 1 710px;
+      background-image: url('./../img/explore-products/Payment.png');
+      background-position: right bottom;
+      /* x y */
+      background-repeat: no-repeat;
+
+      @include mediaBg() {
+        background-image: url('./../img/explore-products/Payment@2x.png');
+      }
+
+      @media (max-width: 1520px) {
+        flex: 0 1 calc(50% - 20px);
+      }
+
+      @include small-mobile {
+        background-size: 50%;
+      }
+    }
+
+    &:nth-child(6) {
+      flex: 0 1 710px;
+      background-image: url('./../img/explore-products/DeviceTerminal.png');
+      background-position: right bottom;
+      /* x y */
+      background-repeat: no-repeat;
+
+      @include mediaBg() {
+        background-image: url('./../img/explore-products/DeviceTerminal@2x.png');
+      }
+
+      @media (max-width: 1520px) {
+        flex: 0 1 calc(50% - 20px);
+      }
+
+      @include small-mobile {
+        background-size: 40%;
+      }
+    }
+
+    @media (max-width: 1520px) {
+      padding: 40px;
+      min-height: 400px;
+    }
+
+    @include tablet {
+      flex: 0 1 100%;
+    }
+
+    @include mobile {
+      background-size: 30%;
+    }
+
+    @include small-mobile {
+      justify-content: flex-start;
+      padding: 24px;
+      // background-image: none !important;
+    }
+  }
+
+  // .explore-products__item-info
+
+  &__item-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 20px;
+    max-width: 360px;
+
+    @media (max-width: 1520px) {
+      max-width: 50%;
+    }
+
+    @include small-mobile {
+      max-width: 100%;
+    }
+  }
+
+  // .explore-products__item-label
+
+  &__item-label {
+    font-family: var(--font-second);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include mobile {
+      font-size: 30px;
+    }
+
+    @include small-mobile {
+      font-size: 20px;
+    }
+  }
+
+  // .explore-products__item-text
+
+  &__item-text {
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include small-mobile {
+      font-size: 14px;
+    }
+  }
+
+  // .explore-products__item-footer
+
+  &__item-footer {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include small-mobile {
+      font-size: 16px;
+    }
+  }
+}
+
+
+.icon--explore-products-arrow {
+  width: 20px;
+  min-width: 20px;
+  height: 10px;
+  stroke: var(--white-color);
+  fill: var(--white-color);
+}

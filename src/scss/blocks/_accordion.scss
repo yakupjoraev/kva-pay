@@ -1,0 +1,112 @@
+.accordion {
+  column-count: 2;
+  column-gap: 20px;
+  row-gap: 18px;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.accordion__item {
+  margin-bottom: 18px;
+  background-color: #0c1220;
+  border-radius: 20px;
+  overflow: hidden;
+
+  @include mobile {
+    margin-bottom: 0;
+  }
+}
+
+.accordion__item.active .accordion__header svg {
+  transform: rotate(180deg);
+  fill: var(--green);
+  stroke: var(--green);
+}
+
+.accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+  padding: 32px 40px;
+  cursor: pointer;
+
+  svg {
+    width: 16px;
+    min-width: 16px;
+    height: 9px;
+    fill: var(--white-color);
+    stroke: var(--white-color);
+    transition: transform 0.2s ease-in;
+  }
+
+  @include mobile {
+    padding: 24px;
+    column-gap: 12px;
+  }
+
+  @include small-mobile {
+    padding: 16px;
+  }
+}
+
+
+
+.accordion__content {
+  max-height: 0;
+  padding: 0 40px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--text-color);
+  transition: max-height 0.2s ease, padding 0.2s ease;
+
+  a {
+    color: var(--primary-color);
+  }
+
+  @include mobile {
+    padding: 0 24px;
+  }
+
+  @include small-mobile {
+    font-size: 14px;
+  }
+}
+
+.accordion__item.active .accordion__content {
+  padding: 0 40px 32px;
+  max-height: 600px;
+
+  @include mobile {
+    padding: 0 24px 24px;
+  }
+
+  @include small-mobile {
+    padding: 0 16px 16px;
+  }
+
+}
+
+// .accordion__texts
+
+.accordion__texts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--white-color);
+
+  a {
+    color: var(--green);
+    text-decoration: underline;
+  }
+
+  @include mobile {
+    row-gap: 8px;
+  }
+}

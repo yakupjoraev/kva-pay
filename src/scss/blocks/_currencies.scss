@@ -1,0 +1,54 @@
+.currencies {
+  overflow: hidden;
+
+  // .currencies__inner
+
+  &__inner {}
+
+  // .currencies__slider
+
+  &__slider {
+    overflow: visible;
+  }
+
+  // .currencies__slider-wrapper
+
+  &__slider-wrapper {
+    transition-timing-function: linear;
+  }
+
+  // .currencies__slide
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: #0c1220;
+    border-radius: 10px;
+
+    @include mobile {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.icon--token {
+  width: 60px;
+  height: 60px;
+  fill: #a7bed3;
+
+  @include mobile {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.icon--token-lightning {
+  @include mobile {
+    width: 40px;
+    height: 40px;
+  }
+}

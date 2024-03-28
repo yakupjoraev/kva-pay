@@ -1,6 +1,7 @@
 .header {
   position: relative;
   padding: 28px 0;
+  z-index: 2;
 
   // .header__row
 
@@ -150,6 +151,7 @@
     display: flex;
     align-items: center;
     column-gap: 6px;
+    cursor: pointer;
 
 
     .icon--arrow-down {
@@ -168,9 +170,17 @@
           pointer-events: visible;
           opacity: 1;
 
+          &::before {
+            top: -30px;
+          }
+
           @include tablet {
             opacity: 0;
           }
+        }
+
+        .nav__link {
+          color: var(--green);
         }
 
         .icon--arrow-down {
@@ -224,17 +234,17 @@
 
     }
 
-    @media (hover:hover) {
-      &:hover {
-        color: var(--green);
+    // @media (hover:hover) {
+    //   &:hover {
+    //     color: var(--green);
+    //   }
 
-        .icon--arrow-down {
-          transform: rotate(180deg);
-          stroke: var(--green);
-          fill: var(--green);
-        }
-      }
-    }
+    //   &:hover~.icon--arrow-down {
+    //     transform: rotate(180deg);
+    //     stroke: var(--green);
+    //     fill: var(--green);
+    //   }
+    // }
 
     @include tablet {
       width: 100%;
@@ -254,6 +264,7 @@
 
   &__sublist {
     position: absolute;
+    z-index: 2;
     top: 120%;
     left: 50%;
     transform: translateX(-50%);
@@ -271,12 +282,30 @@
     pointer-events: none;
     transition: all 0.2s ease-in;
 
+    &::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 60px);
+      z-index: -1;
+
+      @include tablet {
+        content: none;
+      }
+    }
+
     @media (hover:hover) {
       &:hover {
         top: 100%;
         user-select: auto;
         pointer-events: visible;
         opacity: 1;
+      }
+
+      &::before {
+        top: -30px;
       }
     }
 

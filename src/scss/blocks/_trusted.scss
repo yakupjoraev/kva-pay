@@ -193,6 +193,17 @@
     z-index: 2;
     cursor: pointer;
 
+    @media (hover:hover) {
+      &:hover {
+        background-color: var(--green);
+      }
+
+      &.swiper-button-disabled:hover {
+        background-color: rgba(58, 165, 234, 0.2);
+        cursor: default;
+      }
+    }
+
     @include mobile {
       transform: translateY(-220%);
     }

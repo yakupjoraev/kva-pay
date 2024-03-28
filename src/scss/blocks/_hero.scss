@@ -107,7 +107,15 @@
   // .hero__bottom
 
   &__bottom {
-    display: none;
+    margin-top: 180px;
+
+    @include tablet {
+      margin-top: 100px;
+    }
+
+    @include mobile {
+      margin-top: 60px;
+    }
   }
 
   // .hero__list
@@ -118,6 +126,12 @@
     column-gap: 40px;
     row-gap: 20px;
     flex-wrap: wrap;
+    width: fit-content;
+
+    @include small-mobile {
+      margin: 0 auto;
+      column-gap: 20px;
+    }
   }
 
   // .hero__item
@@ -127,31 +141,4 @@
   // .hero__picture
 
   &__picture {}
-}
-
-.section {}
-
-.container {}
-
-.btn-primary {}
-
-
-
-.icon--trustpilot {
-  fill: var(--green);
-  stroke: var(--green);
-}
-
-.icon--Product {
-
-  // .icon--Product_Hunt
-
-  &_Hunt {}
-}
-
-.icon--G2 {
-
-  // .icon--G2_Crowd
-
-  &_Crowd {}
 }

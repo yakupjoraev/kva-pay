@@ -1,10 +1,14 @@
 .section-title {
   font-family: var(--font-titles);
   font-size: 64px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 120%;
   text-align: center;
   color: var(--white-color);
+
+  &--left {
+    text-align: left;
+  }
 
   @include tablet {
     font-size: 40px;
@@ -19,18 +23,16 @@
   }
 }
 
-.title-1 {
-  margin: 1em 0 0.5em;
-  font-size: 38px;
-  font-weight: 700;
-  font-family: var(--font-titles);
-}
+.section-text {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 120%;
+  color: #888;
 
-.title-2 {
-  margin: 1em 0 0.5em;
-  font-size: 32px;
-  font-weight: 700;
-  font-family: var(--font-titles);
+  &--left {
+    text-align: left;
+  }
 }
 
 .title-h3 {

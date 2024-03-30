@@ -1,6 +1,10 @@
 .currencies {
   overflow: hidden;
 
+  &--subhero {
+    margin-top: 0 !important;
+  }
+
   // .currencies__inner
 
   &__inner {}
@@ -17,6 +21,14 @@
     transition-timing-function: linear;
   }
 
+  &__slider-wrapper--center {
+    justify-content: center;
+
+    @include tablet {
+      justify-content: flex-start;
+    }
+  }
+
   // .currencies__slide
 
   &__slide {
@@ -27,6 +39,13 @@
     height: 200px;
     background-color: #0c1220;
     border-radius: 10px;
+
+    img {
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      padding: 20px;
+    }
 
     @include mobile {
       width: 100px;
@@ -51,4 +70,11 @@
     width: 40px;
     height: 40px;
   }
+}
+
+.icon--token-large {
+  width: 220px;
+  height: 40px;
+  fill: transparent;
+  stroke: #a7bed3;
 }

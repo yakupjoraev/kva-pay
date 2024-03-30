@@ -1,0 +1,86 @@
+.subhero-blocks {
+
+  // .subhero-blocks__inner
+
+  &__inner {}
+
+  // .subhero-blocks__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+
+    @include tablet {
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+
+    @include small-mobile {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 60px;
+    }
+  }
+
+  // .subhero-blocks__item
+
+  &__item {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 36px;
+    padding: 32px 16px;
+    background-color: #131a2c;
+    border-radius: 20px;
+
+    @include tablet {
+      row-gap: 24px;
+      padding: 24px;
+    }
+  }
+
+  // .subhero-blocks__picture
+
+  &__picture {
+    margin-top: -80px;
+
+    img {
+      max-width: 294px;
+      width: 100%;
+      height: auto;
+    }
+
+    @include small-mobile {
+      margin-top: -40px;
+
+      img {
+        max-width: 240px;
+      }
+    }
+  }
+
+  // .subhero-blocks__info
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: center;
+  }
+
+  // .subhero-blocks__text
+
+  &__text {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--white-color);
+
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+}

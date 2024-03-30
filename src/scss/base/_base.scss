@@ -111,3 +111,13 @@ pre.code {
     background: linear-gradient(226deg, #39d24e 0%, #7fb600 100%);
   }
 }
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

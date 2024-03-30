@@ -81,7 +81,6 @@
   // .trusted__slide-picture
 
   &__slide-picture {
-
     img {
       width: 160px;
       height: 160px;
@@ -93,6 +92,39 @@
       img {
         width: 120px;
         height: 120px;
+      }
+    }
+
+  }
+
+  &__slide-picture--circle {
+    img {
+      width: 160px;
+      height: 160px;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+
+    @include mobile {
+      img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+
+  &__slide-picture--square {
+    img {
+      width: 240px;
+      height: 80px;
+      border-radius: 0;
+      object-fit: contain;
+    }
+
+    @include mobile {
+      img {
+        width: 200px;
+        height: 60px;
       }
     }
   }

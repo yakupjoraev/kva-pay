@@ -1,0 +1,193 @@
+.start-tabs {
+
+  // .start-tabs__inner
+
+  &__inner {}
+}
+
+
+
+.tabs {
+  display: flex;
+  align-items: center;
+  column-gap: 110px;
+
+  @include tablet {
+    column-gap: 40px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__title {
+    font-family: var(--font-second);
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include tablet {
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--white-color);
+
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  // .tabs__btns
+
+  &__btns {
+    flex: 0 1 600px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    @include tablet {
+      row-gap: 20px;
+    }
+
+    @include mobile {
+      flex: 0 1 auto;
+      width: 100%;
+    }
+  }
+
+  // .tabs__btn
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    padding: 24px 30px;
+    background-color: #131a2c;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.active {
+      background: var(--gradient-bg);
+    }
+
+    @include tablet {
+      column-gap: 12px;
+      padding: 12px 16px;
+    }
+  }
+
+  // .tabs__btn-icon
+
+  &__btn-icon {
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+
+    @include tablet {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+    }
+  }
+
+  // .tabs__btn-info
+
+  &__btn-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    @include tablet {
+      row-gap: 8px;
+    }
+
+    @include mobile {
+      row-gap: 4px;
+    }
+  }
+
+  // .tabs__btn-label
+
+  &__btn-label {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  // .tabs__btn-descr
+
+  &__btn-descr {
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  // .tabs__contents
+
+  &__contents {
+    display: flex;
+    align-items: center;
+    flex: 0 1 750px;
+
+    @include mobile {
+      flex: 0 1 auto;
+      width: 100%;
+    }
+  }
+
+  // .tabs__content
+
+  &__content {
+    display: none;
+    animation: fade 0.5s linear;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    &.active {
+      display: flex;
+    }
+  }
+}
+
+
+.icon--link {
+  width: 48px;
+  height: 48px;
+  fill: var(--white-color);
+  stroke: var(--white-color);
+
+  &-check {
+    fill: transparent;
+  }
+}

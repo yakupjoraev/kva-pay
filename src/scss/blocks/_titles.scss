@@ -10,6 +10,10 @@
     text-align: left;
   }
 
+  &--large {
+    font-size: 98px;
+  }
+
   @include tablet {
     font-size: 40px;
   }
@@ -32,6 +36,10 @@
 
   &--left {
     text-align: left;
+  }
+
+  @include mobile {
+    font-size: 18px;
   }
 }
 

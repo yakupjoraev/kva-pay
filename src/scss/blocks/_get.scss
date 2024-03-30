@@ -1,0 +1,87 @@
+.get {
+
+  // .get__inner
+
+  &__inner {}
+
+  // .get__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include small-mobile {
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+  }
+
+  // .get__item
+
+  &__item {
+    display: grid;
+    row-gap: 20px;
+    padding: 60px;
+    background-color: #131a2c;
+    border-radius: 20px;
+
+    @include tablet {
+      padding: 40px;
+    }
+
+    @include small-mobile {
+      padding: 24px;
+    }
+  }
+
+  // .get__icon
+
+  &__icon {}
+
+  // .get__label
+
+  &__label {
+    font-family: var(--font-second);
+    font-size: 700px;
+    font-size: 28px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include small-mobile {
+      font-size: 24px;
+    }
+  }
+
+  // .get__descr
+
+  &__descr {
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include small-mobile {
+      font-size: 14px;
+    }
+  }
+}
+
+.icon {}
+
+.icon--get {
+  width: 66px;
+  height: 66px;
+  stroke: var(--green);
+  fill: var(--green);
+
+  @include small-mobile {
+    width: 44px;
+    height: 44px;
+  }
+}

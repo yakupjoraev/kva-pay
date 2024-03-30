@@ -4,7 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый</title>
+		<title>Main</title>
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/main.css" />
 
 		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
@@ -257,36 +258,361 @@
 				</div>
 			</div>
 		</header>
-		<main>
-			<section>
-				<div class="container">
-					<h1 class="title-1">Pages</h1>
-					<br />
-					<br />
-					<br />
-					<a href="./main.html" target="_blank">Main page</a>
-					<br />
-					<br />
-					<br />
-					<a href="./crypto-checkout.html" target="_blank">Crypto Chekout page</a>
-					<br />
-					<br />
-					<br />
-					<a href="./paynent-links.html" target="_blank">Paynent Links page</a>
-					<br />
-					<br />
-					<br />
-					<a href="./crypto-wallet.html" target="_blank">Crypto Wallet page</a>
-					<br />
-					<br />
-					<br />
-					<a href="./pricing.html" target="_blank">Pricing page</a>
-					<br />
-					<br />
-					<br />
+		<section class="pricing">
+			<div class="container">
+				<div class="pricing__inner">
+					<div class="section-head">
+						<h1 class="section-title section-title--large">Pricing</h1>
+						<p class="section-text">
+							Mattis sollicitudin adipiscing porttitor in&#160;lorem velit sollicitudin. Duis urna nullam suspendisse&#160;eu. Ut&#160;ultrices interdum sollicitudin
+							elit quis commodo amet convallis.
+						</p>
+					</div>
+
+					<div class="pricing__list">
+						<div class="pricing__item">
+							<div class="pricing__item-label"><span>FREE</span></div>
+
+							<div class="pricing__item-info">
+								<h4 class="pricing__item-title">Wallet</h4>
+								<p class="pricing__item-text">Safe and secure cryptocurrency wallet for personal use</p>
+							</div>
+
+							<ul class="pricing__item-list">
+								<li class="pricing__item-item">
+									<div class="pricing__item-icon">
+										<svg class="icon icon--gravity-heck">
+											<use href="./img/svgsprite/sprite.symbol.svg#gravity-heck"></use>
+										</svg>
+									</div>
+									<p class="pricing__item-descr">Multicurrency wallet management</p>
+								</li>
+
+								<li class="pricing__item-item">
+									<div class="pricing__item-icon">
+										<svg class="icon icon--gravity-heck">
+											<use href="./img/svgsprite/sprite.symbol.svg#gravity-heck"></use>
+										</svg>
+									</div>
+									<p class="pricing__item-descr">Exchange and conversion of&#160;cryptocurrencies</p>
+								</li>
+
+								<li class="pricing__item-item">
+									<div class="pricing__item-icon">
+										<svg class="icon icon--gravity-heck">
+											<use href="./img/svgsprite/sprite.symbol.svg#gravity-heck"></use>
+										</svg>
+									</div>
+									<p class="pricing__item-descr">Deposit/withdrawal with our Bitcoin ATMs</p>
+								</li>
+							</ul>
+
+							<a class="pricing__item-btn btn-outline" href="#">Get a&#160;Free Wallet</a>
+						</div>
+
+						<div class="pricing__item pricing__item--active">
+							<div class="pricing__item-label"><span>2% FEE</span></div>
+
+							<div class="pricing__item-info">
+								<h4 class="pricing__item-title">White Lable</h4>
+								<p class="pricing__item-text">Customize to&#160;your needs and tastes</p>
+							</div>
+
+							<ul class="pricing__item-list">
+								<li class="pricing__item-item">
+									Everything in&#160;Wallet
+								</li>
+
+								<li class="pricing__item-item">
+									<div class="pricing__item-icon">
+										<svg class="icon icon--plus">
+											<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+										</svg>
+									</div>
+									<p class="pricing__item-descr">Adding a&#160;custom design</p>
+								</li>
+
+								<li class="pricing__item-item">
+									<div class="pricing__item-icon">
+										<svg class="icon icon--plus">
+											<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+										</svg>
+									</div>
+									<p class="pricing__item-descr">No&#160;redirecting, no&#160;branding KvaPay</p>
+								</li>
+							</ul>
+
+							<a class="pricing__item-btn btn-primary" href="#">Get In&#160;Touch</a>
+						</div>
+
+						<div class="pricing__item">
+							<div class="pricing__item-label"><span>0.5% FEE</span></div>
+
+							<div class="pricing__item-info">
+								<h4 class="pricing__item-title">Crypto Payment Gateway</h4>
+								<p class="pricing__item-text">First-class cryptocurrency payment gateway</p>
+							</div>
+
+							<ul class="pricing__item-list">
+								<li class="pricing__item-item">
+									Everything in&#160;Wallet
+								</li>
+
+								<li class="pricing__item-item">
+									<div class="pricing__item-icon">
+										<svg class="icon icon--plus">
+											<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+										</svg>
+									</div>
+									<p class="pricing__item-descr">Connect payment via API to&#160;your website</p>
+								</li>
+
+								<li class="pricing__item-item">
+									<div class="pricing__item-icon">
+										<svg class="icon icon--plus">
+											<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+										</svg>
+									</div>
+									<p class="pricing__item-descr">Plugins for ecom</p>
+								</li>
+							</ul>
+
+							<a class="pricing__item-btn btn-outline" href="#">Registration Now</a>
+						</div>
+					</div>
 				</div>
-			</section>
-		</main>
+			</div>
+		</section>
+		<section class="get section">
+			<div class="container">
+				<div class="get__inner">
+					<div class="section-head">
+						<h3 class="section-title">What You will get</h3>
+					</div>
+
+					<ul class="get__list">
+						<li class="get__item">
+							<div class="get__icon">
+								<svg class="icon icon--get">
+									<use href="./img/svgsprite/sprite.symbol.svg#flag"></use>
+								</svg>
+							</div>
+							<h4 class="get__label">Payment statuses</h4>
+							<p class="get__descr">
+								Success, Unconfirmed, Payment Pending, Waiting for approval, Expired&#160;&#8212; all payment statuses are available in&#160;the API, payment form and
+								in&#160;the merchant&#8217;s personal cabinet.
+							</p>
+						</li>
+
+						<li class="get__item">
+							<div class="get__icon">
+								<svg class="icon icon--get">
+									<use href="./img/svgsprite/sprite.symbol.svg#currency-exchange-rounded"></use>
+								</svg>
+							</div>
+							<h4 class="get__label">Fast and secure transaction</h4>
+							<p class="get__descr">
+								KvakPay technologies provide fast and secure transactions compared to&#160;conventional cryptocurrency transfers. Transactions are not lost and are
+								securely tracked in&#160;blockchain networks.
+							</p>
+						</li>
+
+						<li class="get__item">
+							<div class="get__icon">
+								<svg class="icon icon--get">
+									<use href="./img/svgsprite/sprite.symbol.svg#wallet"></use>
+								</svg>
+							</div>
+							<h4 class="get__label">Wallet</h4>
+							<p class="get__descr">
+								Sign up&#160;and get a&#160;free cryptocurrency wallet. Send and receive payments, deposit and withdraw. Store and exchange your cryptocurrency.
+							</p>
+						</li>
+
+						<li class="get__item">
+							<div class="get__icon">
+								<svg class="icon icon--get">
+									<use href="./img/svgsprite/sprite.symbol.svg#guard"></use>
+								</svg>
+							</div>
+							<h4 class="get__label">Volatility protection</h4>
+							<p class="get__descr">
+								The automatic conversion feature allows you to&#160;convert all incoming payments to&#160;your preferred currency. For example, you can set
+								up&#160;conversion of&#160;incoming BTC payments to&#160;EURO. It&#8217;s completely free of&#160;charge!
+							</p>
+						</li>
+
+						<li class="get__item">
+							<div class="get__icon">
+								<svg class="icon icon--get">
+									<use href="./img/svgsprite/sprite.symbol.svg#percent"></use>
+								</svg>
+							</div>
+							<h4 class="get__label">Customize network fees</h4>
+							<p class="get__descr">You can define the percentage of&#160;fee coverage between you and the customer for each payment yourself</p>
+						</li>
+
+						<li class="get__item">
+							<div class="get__icon">
+								<svg class="icon icon--get">
+									<use href="./img/svgsprite/sprite.symbol.svg#note"></use>
+								</svg>
+							</div>
+							<h4 class="get__label">Detailed reporting</h4>
+							<p class="get__descr">
+								View and export the history of&#160;all transactions on&#160;your account. Find the transactions you need with easy-to-use filters. Track the status
+								of&#160;crypto transactions online. Keep your business expenses under control!
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="faq section">
+			<div class="container">
+				<div class="faq__inner">
+					<div class="section-head">
+						<h3 class="section-title">Got Questions?</h3>
+					</div>
+
+					<div class="faq__accardion">
+						<!-- Accordion -->
+						<div class="accordion">
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">Vulputate magna ut&#160;nunc est sed tellus quis. Odio in&#160;odio consectetur dui?</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium blanditiis assumenda voluptatibus voluptatum unde tenetur, ullam
+											repellat laborum possimus recusandae&#160;ea! Rerum accusantium sunt consectetur aut voluptatum voluptatem architecto fugit. Illum
+											ex&#160;totam et&#160;saepe animi blanditiis atque impedit quis cupiditate amet? Similique aperiam dolores eum quos mollitia consequuntur
+											molestiae. Tempora atque dolore eius distinctio omnis reprehenderit quae repellat quibusdam!
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">
+										Euismod urna sit feugiat viverra nunc tempus fermentum. Semper et&#160;ultrices volutpat mi&#160;nisl faucibus?
+									</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, numquam.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">Vulputate magna ut&#160;nunc est sed tellus quis. Odio in&#160;odio consectetur dui?</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">
+										Euismod urna sit feugiat viverra nunc tempus fermentum. Semper et&#160;ultrices volutpat mi&#160;nisl faucibus?
+									</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">Vulputate magna ut&#160;nunc est sed tellus quis. Odio in&#160;odio consectetur dui?</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">
+										Euismod urna sit feugiat viverra nunc tempus fermentum. Semper et&#160;ultrices volutpat mi&#160;nisl faucibus?
+									</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">Vulputate magna ut&#160;nunc est sed tellus quis. Odio in&#160;odio consectetur dui?</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<footer class="footer">
 			<div class="container-large">
 				<div class="footer__inner">
@@ -422,6 +748,8 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="./js/swiper-bundle.min.js"></script>
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>

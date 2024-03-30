@@ -84,6 +84,7 @@ pre.code {
   justify-content: center;
   padding: 18px 20px;
   background: var(--gradient-bg);
+  border: 2px solid transparent;
   border-radius: 10px;
 
   font-weight: 500;
@@ -93,7 +94,30 @@ pre.code {
 
   @media (hover:hover) {
     &:hover {
-      animation: btnBg 0.5s linear;
+      background: transparent;
+      border-color: var(--gradient-bg);
+    }
+  }
+}
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 20px;
+  background: transparent;
+  border: 2px solid var(--white-color);
+  border-radius: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--white-color);
+
+  @media (hover:hover) {
+    &:hover {
+      background: var(--gradient-bg);
+      border-color: var(--gradient-bg);
     }
   }
 }

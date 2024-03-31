@@ -70,6 +70,17 @@
       font-size: 14px;
     }
   }
+
+  &__btn {
+    margin-top: auto;
+    width: fit-content;
+    min-width: 240px;
+    height: 50px;
+
+    @include small-mobile {
+      width: 100%;
+    }
+  }
 }
 
 .icon {}
@@ -83,5 +94,48 @@
   @include small-mobile {
     width: 44px;
     height: 44px;
+  }
+}
+
+.icon--server-get {
+  height: auto;
+  stroke: #A7BED3;
+  fill: #A7BED3;
+}
+
+.icon--server-get--php {
+  width: 116px;
+  height: 62px;
+  object-fit: cover;
+}
+
+.icon--server-get--node {
+  width: 135px;
+  height: 84px;
+}
+
+.icon--server-get--python {
+  width: 206px;
+  height: 62px;
+}
+
+.icon--server-get--magento {
+  width: 232px;
+  height: 66px;
+}
+
+.server-get {
+
+  .get__item {
+    padding: 48px;
+
+
+    @include tablet {
+      padding: 32px;
+    }
+
+    @include small-mobile {
+      padding: 24px;
+    }
   }
 }

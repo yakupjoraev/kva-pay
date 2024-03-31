@@ -1,0 +1,150 @@
+.our-use {
+
+  // .our-use__inner
+
+  &__inner {
+    display: grid;
+    row-gap: 80px;
+
+    @include tablet {
+      row-gap: 60px;
+    }
+
+    @include small-mobile {
+      row-gap: 40px;
+    }
+  }
+
+  // .our-use__top
+
+  &__top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include tablet {
+      column-gap: 40px;
+      row-gap: 40px;
+    }
+
+    @include small-mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__btn {
+    width: fit-content;
+    margin-top: 40px;
+
+    @include small-mobile {
+      width: 100%;
+      margin-top: 24px;
+    }
+  }
+
+  // .our-use__picture
+
+  &__picture {
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+
+    @include small-mobile {
+      img {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // .our-use__bottom
+
+  &__bottom {}
+
+  // .our-use__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    justify-content: space-between;
+
+    @include tablet {
+      column-gap: 40px;
+    }
+
+    @include small-mobile {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 24px;
+    }
+  }
+
+  // .our-use__item
+
+  &__item {
+    display: grid;
+    row-gap: 24px;
+    align-content: baseline;
+
+    @include tablet {
+      row-gap: 16px;
+    }
+  }
+
+  // .our-use__item-header
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  // .our-use__item-circle
+
+  &__item-circle {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    border-radius: 100%;
+    background-color: var(--green);
+  }
+
+  // .our-use__item-title
+
+  &__item-title {
+    font-family: var(--font-second);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: var(--white-color);
+
+    @include tablet {
+      font-size: 24px;
+    }
+
+    @include small-mobile {
+      font-size: 18px;
+    }
+  }
+
+  // .our-use__item-texts
+
+  &__item-texts {
+    display: grid;
+    row-gap: 16px;
+    margin-left: 32px;
+  }
+
+  // .our-use__item-text
+
+  &__item-text {
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--white-color);
+  }
+}

@@ -17,6 +17,16 @@
     }
   }
 
+  &__inner--bg-blue {
+    background-color: #0c1220;
+    border-radius: 20px;
+
+    .form__picture {
+      padding: 40px 0 0;
+
+    }
+  }
+
   // .form__info
 
   &__info {}
@@ -49,6 +59,16 @@
 
     @include small-mobile {
       padding: 24px 16px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include mobile {
+      font-size: 18px;
     }
   }
 

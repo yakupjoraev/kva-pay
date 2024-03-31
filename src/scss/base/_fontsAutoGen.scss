@@ -1,8 +1,8 @@
 @font-face {
-	font-family: GolosText;
+	font-family: FirasansBook;
 	font-display: swap;
-	src: url("../fonts/GolosText-Bold.woff2") format("woff2"), url("../fonts/GolosText-Bold.woff") format("woff");
-	font-weight: 700;
+	src: url("../fonts/FirasansBook.woff2") format("woff2"), url("../fonts/FirasansBook.woff") format("woff");
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
@@ -13,10 +13,17 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: FirasansBook;
+	font-family: GolosText;
 	font-display: swap;
-	src: url("../fonts/FirasansBook.woff2") format("woff2"), url("../fonts/FirasansBook.woff") format("woff");
-	font-weight: 400;
+	src: url("../fonts/GolosText-Bold.woff2") format("woff2"), url("../fonts/GolosText-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: GolosText;
+	font-display: swap;
+	src: url("../fonts/GolosText-ExtraBold.woff2") format("woff2"), url("../fonts/GolosText-ExtraBold.woff") format("woff");
+	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
@@ -34,10 +41,10 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: GolosText;
+	font-family: Magistral;
 	font-display: swap;
-	src: url("../fonts/GolosText-ExtraBold.woff2") format("woff2"), url("../fonts/GolosText-ExtraBold.woff") format("woff");
-	font-weight: 800;
+	src: url("../fonts/Magistral-Bold.woff2") format("woff2"), url("../fonts/Magistral-Bold.woff") format("woff");
+	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
@@ -64,13 +71,6 @@
 @font-face {
 	font-family: Magistral;
 	font-display: swap;
-	src: url("../fonts/Magistral-Bold.woff2") format("woff2"), url("../fonts/Magistral-Bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
-	font-family: Magistral;
-	font-display: swap;
 	src: url("../fonts/Magistral-Light.woff2") format("woff2"), url("../fonts/Magistral-Light.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
@@ -85,15 +85,15 @@
 @font-face {
 	font-family: Montserrat;
 	font-display: swap;
-	src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-	font-weight: 700;
+	src: url("../fonts/Montserrat-BoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-BoldItalic.woff") format("woff");
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: Montserrat;
 	font-display: swap;
-	src: url("../fonts/Montserrat-BoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-BoldItalic.woff") format("woff");
-	font-weight: 400;
+	src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+	font-weight: 700;
 	font-style: normal;
 }
 @font-face {

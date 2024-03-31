@@ -22,6 +22,15 @@
   width: 100%;
 }
 
+.container-small {
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+
+  max-width: 1200px;
+  width: 100%;
+}
+
+
 .container-full {
   padding: 0 var(--container-padding);
   max-width: 100%;

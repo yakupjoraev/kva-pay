@@ -1,0 +1,234 @@
+.subscribe {
+  position: relative;
+  margin: 48px 0;
+  padding: 110px 150px;
+  background: var(--gradient-bg);
+  border-radius: 48px;
+  overflow: hidden;
+
+  @media (max-width: 1500px) {
+    padding: 60px 80px;
+  }
+
+  @media (max-width: 1300px) {
+    padding: 40px;
+  }
+
+  @include mobile {
+    margin: 24px 0;
+  }
+
+  @include small-mobile {
+    padding: 24px 16px;
+    border-radius: 20px;
+  }
+
+  // .subscribe__bg
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    user-select: none;
+    pointer-events: none;
+
+    img {
+      max-width: 680px;
+    }
+
+    @media (max-width: 1500px) {
+      right: -10%;
+    }
+
+    @media (max-width: 1300px) {
+      bottom: -20%;
+      right: -15%;
+    }
+
+    @include tablet {
+      img {
+        max-width: 540px;
+      }
+    }
+
+    @include mobile {
+      right: 0;
+      bottom: 0;
+
+      img {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: -15%;
+      }
+    }
+
+    @include small-mobile {
+      display: none;
+    }
+
+  }
+
+  // .subscribe__inner
+
+  &__inner {
+    max-width: 700px;
+
+    @media (max-width: 1300px) {
+      max-width: 50%;
+    }
+
+    @include mobile {
+      max-width: 70%;
+    }
+
+    @include small-mobile {
+      max-width: 100%;
+    }
+  }
+
+  // .subscribe__title
+
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @media (max-width: 1300px) {
+      margin-bottom: 24px;
+      font-size: 34px;
+    }
+
+    @include tablet {
+      font-size: 28px;
+    }
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  // .subscribe__form
+
+  &__form {
+    display: grid;
+    row-gap: 20px;
+  }
+
+  // .subscribe__row
+
+  &__row {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+
+  }
+
+  // .subscribe__input
+
+  &__input {
+    width: 100%;
+    height: 54px;
+    padding: 4px 20px;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    background-color: var(--white-color);
+
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--page-bg);
+    transition: all 0.2s ease-in;
+
+    @media (hover:hover) {
+      &:hover {
+        border-color: var(--green);
+      }
+    }
+
+    &::placeholder {
+      font-family: var(--font-second);
+      font-size: 14px;
+      line-height: 100%;
+      color: #565656;
+    }
+
+    @include mobile {
+      height: 44px;
+    }
+  }
+
+  // .subscribe__btn
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 104px;
+    height: 54px;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #121a2d;
+    transition: all 0.2s ease-in;
+
+    @media (hover:hover) {
+      &:hover {
+        background-color: var(--green);
+        color: var(--white-color);
+      }
+    }
+
+    @include mobile {
+      height: 44px;
+    }
+  }
+
+  // .subscribe__checkbox
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  // .subscribe__checkbox-input
+
+  &__checkbox-input {
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -100;
+    opacity: 0;
+
+    &:checked~.subscribe__checkbox-square {
+      background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.6449 3.21559C12.715 3.27571 12.7727 3.34906 12.8144 3.43146C12.8562 3.51385 12.8814 3.60368 12.8884 3.69579C12.8955 3.78791 12.8843 3.88051 12.8555 3.9683C12.8268 4.0561 12.781 4.13737 12.7208 4.20747L7.09583 10.77C7.03276 10.8435 6.95517 10.9033 6.86792 10.9455C6.78067 10.9876 6.68564 11.0113 6.58881 11.015C6.49197 11.0187 6.39542 11.0023 6.30521 10.9669C6.215 10.9315 6.13307 10.8779 6.06458 10.8093L2.78333 7.52809C2.65531 7.39542 2.58452 7.21777 2.58621 7.03342C2.5879 6.84906 2.66193 6.67274 2.79236 6.54244C2.92278 6.41213 3.09917 6.33827 3.28353 6.33676C3.46789 6.33524 3.64547 6.4062 3.77802 6.53434L6.52302 9.2784L11.654 3.29247C11.7753 3.15108 11.9479 3.06366 12.1337 3.04942C12.3195 3.03518 12.5034 3.09435 12.6449 3.21559Z' fill='%230C1220'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 24px;
+    }
+  }
+
+  // .subscribe__checkbox-square
+
+  &__checkbox-square {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background-color: var(--white-color);
+  }
+
+  // .subscribe__checkbox-text
+
+  &__checkbox-text {
+    font-size: 11px;
+    line-height: 120%;
+    color: #ededed;
+  }
+}

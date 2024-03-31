@@ -1,0 +1,43 @@
+.table {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #131a2c;
+  border-collapse: collapse;
+  width: 100%;
+
+  thead {
+    background: #0c111f;
+  }
+
+  tbody tr:nth-child(even) {
+    background: #1b2338;
+  }
+
+  th {
+    padding: 16px 20px;
+
+    @include small-mobile {
+      padding: 12px;
+    }
+  }
+
+  td {
+    padding: 20px;
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include small-mobile {
+      padding: 12px;
+      font-size: 12px;
+    }
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #242e47;
+    border-right: 1px solid #242e47;
+  }
+}

@@ -29,6 +29,7 @@
 
     @include small-mobile {
       flex-direction: column;
+      row-gap: 24px;
     }
   }
 
@@ -139,6 +140,18 @@
     display: flex;
     align-items: center;
     column-gap: 12px;
+  }
+
+  &__cirklelist {
+
+    .article__circkleitem {
+      padding-left: 30px;
+      text-align: left;
+
+      @include small-mobile {
+        font-size: 14px;
+      }
+    }
   }
 
   // .hero__picture

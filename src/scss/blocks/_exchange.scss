@@ -1,0 +1,195 @@
+.exchange {
+
+  // .exchange__inner
+
+  &__inner {
+    display: flex;
+    column-gap: 140px;
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  }
+
+  // .exchange__info
+
+  &__info {
+    flex: 0 1 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @include tablet {
+      flex: 0 1 auto;
+    }
+
+    @include small-mobile {
+      row-gap: 12px;
+    }
+  }
+
+  // .exchange__title
+
+  &__title {
+    margin-bottom: 32px;
+
+    @include tablet {
+      margin-bottom: 12px;
+    }
+  }
+
+  // .exchange__descr
+
+  &__descr {
+    font-size: 16px;
+    line-height: 120%;
+    color: #888;
+  }
+
+  &__form-arrow {
+    margin: 0 auto;
+    text-align: center;
+
+    @include small-mobile {
+      width: 24px;
+      height: 24px;
+      margin: -10px auto;
+    }
+  }
+
+  // .exchange__form
+
+  &__form {
+    display: grid;
+    row-gap: 16px;
+    flex: 0 1 710px;
+    padding: 60px;
+    border-radius: 20px;
+    background-color: #0c1220;
+
+    @include tablet {
+      flex: 0 1 auto;
+      padding: 32px;
+    }
+
+    @include small-mobile {
+      padding: 24px;
+    }
+  }
+
+  // .exchange__form-label
+
+  &__form-label {
+    font-family: var(--font-second);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include small-mobile {
+      font-size: 24px;
+    }
+  }
+
+  // .exchange__block
+
+  &__block {
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  // .exchange__block-label
+
+  &__block-label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--white-color);
+  }
+
+  // .exchange__rows
+
+  &__rows {
+    display: grid;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1d2537;
+
+    @include small-mobile {
+      padding: 10px;
+    }
+  }
+
+  // .exchange__row
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+
+    &:first-child {
+      border-bottom: 1px solid #313b52;
+    }
+  }
+
+  // .exchange__name
+
+  &__name {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    color: var(--white-color);
+  }
+
+  // .exchange__arrow
+
+  &__arrow {
+    .icon--arrow-down {
+      width: 12px;
+      height: 12px;
+      fill: var(--white-color);
+    }
+  }
+
+  // .exchange__input
+
+  &__input {
+    flex: 1 1 auto;
+    width: 100%;
+    background-color: transparent;
+    outline: 0;
+
+    font-family: var(--font-second);
+    font-size: 40px;
+    line-height: 100%;
+    color: var(--white-color);
+  }
+
+  // .exchange__token
+
+  &__token {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+
+    svg,
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      overflow: hidden;
+    }
+
+  }
+}
+
+.icon--entypo_arrow-up {
+  width: 40px;
+  height: 40px;
+  fill: var(--green);
+}

@@ -81,6 +81,12 @@
 
     &.active {
       background: var(--gradient-bg);
+
+      .tabs__btn-link {
+        margin-top: 12px;
+        background: var(--gradient-bg);
+        border-color: transparent;
+      }
     }
 
     @include tablet {
@@ -100,6 +106,33 @@
       width: 32px;
       height: 32px;
       min-width: 32px;
+    }
+  }
+
+  &__btn-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid var(--white-color);
+    border-radius: 10px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--white-color);
+
+    @media (hover:hover) {
+      &:hover {
+        background: var(--gradient-bg);
+        border-color: var(--gradient-bg);
+      }
+    }
+
+    @include small-mobile {
+      height: 40px;
     }
   }
 
@@ -189,5 +222,43 @@
 
   &-check {
     fill: transparent;
+  }
+}
+
+.tabs__content-picture {
+  max-width: 460px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.online-exchange-tabs {
+  align-items: flex-start;
+
+  @include mobile {
+
+    flex-direction: column-reverse;
+  }
+
+  .tabs__btn {
+    border-radius: 20px;
+    padding: 48px 60px;
+    background: #0c1220;
+
+    @include tablet {
+      padding: 24px;
+    }
+
+    @include mobile {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .tabs__btn.active {
+    background: #0c1220;
   }
 }

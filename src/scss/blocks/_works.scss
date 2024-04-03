@@ -16,6 +16,10 @@
     column-gap: 100px;
     row-gap: 100px;
 
+    &--grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
     @include tablet {
       column-gap: 40px;
       row-gap: 60px;
@@ -41,6 +45,10 @@
       padding-right: 0;
       padding-bottom: 40px;
     }
+  }
+
+  &__Item-btn {
+    margin-top: 24px;
   }
 
   // .works__item-num

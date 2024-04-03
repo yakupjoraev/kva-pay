@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Main</title>
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container-large">
+				<div class="header__row">
+					<a href="#" class="logo">
+						<img width="144" height="36" src="./img/logo.svg" alt="logo" />
+					</a>
+
+					<nav class="header__nav nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<!-- класс active при добавление к nav__link - станется активной -->
+								<a class="nav__link" href="#">
+									Products
+								</a>
+
+								<svg class="icon icon--arrow-down">
+									<use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+								</svg>
+
+								<ul class="nav__sublist nav__sublist--column-3">
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-basket">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-basket"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Crypto Checkout for e-commerce</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-wallet">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-wallet"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Crypto Wallet</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-link">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-link"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Payment Links</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-bankomat">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-bankomat"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Kvakomat Bitcoin ATMs Network</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-btob">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-btob"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Crypto Exchange</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-terminal">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-terminal"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">POS Terminal</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav__item">
+								<a class="nav__link" href="#">
+									Pricing
+								</a>
+							</li>
+
+							<li class="nav__item">
+								<a class="nav__link" href="#">
+									Company
+								</a>
+
+								<svg class="icon icon--arrow-down">
+									<use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+								</svg>
+
+								<ul class="nav__sublist nav__sublist--column-2">
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-blog">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-blog"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Blog</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-career">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-career"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Career</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-security">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-security"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Security</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-contact">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-contact"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Contact Us</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav__item">
+								<a class="nav__link" href="#">
+									Developers
+								</a>
+
+								<svg class="icon icon--arrow-down">
+									<use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+								</svg>
+
+								<ul class="nav__sublist nav__sublist--column-2">
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-api">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-api"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">API</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-plugins">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-plugins"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">E-commerce Plugins</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-docs">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-docs"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Docs</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav__item"><a class="header__btn header__btn--mobile header__btn--outline" href="#">Sign In</a></li>
+							<li class="nav__item"><a class="header__btn header__btn--mobile header__btn--white" href="#">Sign Up</a></li>
+						</ul>
+					</nav>
+
+					<div class="header__others">
+						<a class="header__language" href="#">
+							<span>EN</span>
+
+							<svg class="icon icon--arrow-down">
+								<use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+							</svg>
+						</a>
+
+						<a class="header__btn header__btn--outline" href="#">Sign In</a>
+						<a class="header__btn header__btn--white" href="#">Sign Up</a>
+					</div>
+
+					<button class="mobile-nav-btn">
+						<div class="nav-icon"></div>
+					</button>
+				</div>
+			</div>
+		</header>
+		<div class="breadcrumbs">
+			<div class="container-large">
+				<div class="breadcrumbs__inner">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Home</a></li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Blog</a></li>
+						<li class="breadcrumbs__item">Aliquam nam convallis malesuada mattis tincidunt at</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<section class="security section">
+			<div class="container">
+				<div class="security__inner">
+					<div class="section-head">
+						<h1 class="section-title--center">Security</h1>
+						<p class="section-text">Learn all about the safety of&#160;your funds</p>
+					</div>
+
+					<ul class="security__list get__list">
+						<li class="get__item">
+							<div class="get__icon">
+								<svg class="icon icon--get">
+									<use href="./img/svgsprite/sprite.symbol.svg#ssl"></use>
+								</svg>
+							</div>
+							<h4 class="get__label">SSL connection</h4>
+							<p class="get__descr">SSL encrypted connection via HTTPS, two-factor authentication, trusted IP&#160;addresses.</p>
+						</li>
+
+						<li class="get__item">
+							<div class="get__icon">
+								<svg class="icon icon--get">
+									<use href="./img/svgsprite/sprite.symbol.svg#privacy"></use>
+								</svg>
+							</div>
+							<h4 class="get__label">Privacy</h4>
+							<p class="get__descr">
+								We&#160;store transaction information for exactly as&#160;long as&#160;it&#160;is&#160;needed to&#160;make a&#160;payment and then delete it.
+							</p>
+						</li>
+
+						<li class="get__item">
+							<div class="get__icon">
+								<svg class="icon icon--get">
+									<use href="./img/svgsprite/sprite.symbol.svg#anonim"></use>
+								</svg>
+							</div>
+							<h4 class="get__label">Anonymity</h4>
+							<p class="get__descr">
+								We&#160;respect the privacy of&#160;our customers and do&#160;not require proof of&#160;identity. Your payments remain anonymous.
+							</p>
+						</li>
+					</ul>
+
+					<div class="security__main">
+						<div class="security__picture">
+							<img src="./img/security/security-pic.svg" alt="Alt" />
+						</div>
+						<div class="security__steps">
+							<h3 class="security__steps-title">How to&#160;improve security</h3>
+							<p class="security__steps-descr">Follow simple tips to&#160;improve your safety</p>
+
+							<ul class="security__steps-list">
+								<li class="security__steps-item">
+									<div class="security__steps-num">01</div>
+									<div class="security__steps-info">
+										<h4 class="security__steps-label">Use 2-FA</h4>
+										<p class="security__steps-text">
+											Activate the two-factor authentication option in&#160;your personal cabinet. With its help you will be&#160;able to&#160;protect your
+											account from unauthorized access.
+										</p>
+									</div>
+								</li>
+
+								<li class="security__steps-item">
+									<div class="security__steps-num">02</div>
+									<div class="security__steps-info">
+										<h4 class="security__steps-label">Do&#160;not store data on&#160;the Internet</h4>
+										<p class="security__steps-text">
+											We&#160;strongly recommend storing your passwords in&#160;an&#160;offline storage, or better yet, on&#160;a&#160;physical disk. This way,
+											you will protect your data from intruders and secure your account.
+										</p>
+									</div>
+								</li>
+
+								<li class="security__steps-item">
+									<div class="security__steps-num">03</div>
+									<div class="security__steps-info">
+										<h4 class="security__steps-label">Use protective software</h4>
+										<p class="security__steps-text">
+											If&#160;the device from which you use the service is&#160;not protected by antivirus, you may be&#160;at&#160;risk of&#160;phishing
+											or&#160;other scams. Install protective software on&#160;your computer or&#160;other device to&#160;avoid such problems.
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="faq section">
+			<div class="container">
+				<div class="faq__inner">
+					<div class="section-head">
+						<h3 class="section-title">Got Questions?</h3>
+					</div>
+
+					<div class="faq__accardion">
+						<!-- Accordion -->
+						<div class="accordion">
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">Vulputate magna ut&#160;nunc est sed tellus quis. Odio in&#160;odio consectetur dui?</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium blanditiis assumenda voluptatibus voluptatum unde tenetur, ullam
+											repellat laborum possimus recusandae&#160;ea! Rerum accusantium sunt consectetur aut voluptatum voluptatem architecto fugit. Illum
+											ex&#160;totam et&#160;saepe animi blanditiis atque impedit quis cupiditate amet? Similique aperiam dolores eum quos mollitia consequuntur
+											molestiae. Tempora atque dolore eius distinctio omnis reprehenderit quae repellat quibusdam!
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">
+										Euismod urna sit feugiat viverra nunc tempus fermentum. Semper et&#160;ultrices volutpat mi&#160;nisl faucibus?
+									</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, numquam.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">Vulputate magna ut&#160;nunc est sed tellus quis. Odio in&#160;odio consectetur dui?</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">
+										Euismod urna sit feugiat viverra nunc tempus fermentum. Semper et&#160;ultrices volutpat mi&#160;nisl faucibus?
+									</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">Vulputate magna ut&#160;nunc est sed tellus quis. Odio in&#160;odio consectetur dui?</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">
+										Euismod urna sit feugiat viverra nunc tempus fermentum. Semper et&#160;ultrices volutpat mi&#160;nisl faucibus?
+									</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">Vulputate magna ut&#160;nunc est sed tellus quis. Odio in&#160;odio consectetur dui?</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container-large">
+				<div class="footer__inner">
+					<div class="footer__top">
+						<div class="footer__left">
+							<a class="footer__logo" href="#">
+								<img src="./img/logo.svg" width="144" height="36" alt="logo" />
+							</a>
+
+							<nav class="footer__nav">
+								<ul class="footer__nav-list">
+									<li class="footer__nav-item footer__nav-item--label">Products</li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Crypto Payments</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Payment Link</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Crypto Wallet</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">POS Terminal</a></li>
+								</ul>
+
+								<ul class="footer__nav-list">
+									<li class="footer__nav-item footer__nav-item--label">Crypto Exchange</li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Buy Bitcoin</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Buy Litecoin</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Buy Ethereum</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Buy Tether</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Buy Crypto</a></li>
+								</ul>
+
+								<ul class="footer__nav-list">
+									<li class="footer__nav-item footer__nav-item--label">Developers</li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">API</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Docs</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Plugins</a></li>
+								</ul>
+
+								<ul class="footer__nav-list">
+									<li class="footer__nav-item footer__nav-item--label">Company</li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Contact Us</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Career</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Pricing</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Blog</a></li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="footer__right">
+							<ul class="footer__socials socials">
+								<li class="socials__item">
+									<a class="socials__link active" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#telegram"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#medium"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#linkedIn"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#twitter"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#crunchbase"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#discord"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#github"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+
+							<form action="#" class="footer__form form-subscribe">
+								<div class="form-subscribe__texts">
+									<h3 class="form-subscribe__label title-h3">Subscribe to&#160;our website</h3>
+									<p class="form-subscribe__text">For announcements and exclusive deals</p>
+								</div>
+
+								<div class="form-subscribe__row">
+									<input class="form-subscribe__input" type="email" />
+									<button type="submit" class="form-subscribe__btn btn-primary">Subscribe</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="footer__bottom">
+						<div class="footer__copyright">
+							<p>
+								&#169; 2024 KvaPay. Pariatur culpa in&#160;reprehenderit culpa proident ut&#160;laboris ut&#160;consectetur excepteur sit ipsum eu&#160;quis deserunt.
+								Enim minim officia sunt veniam consectetur culpa dolore ea&#160;occaecat sint non sit cupidatat id&#160;non anim amet officia ipsum.Labore consectetur
+								Lorem aute aliquip laborum non aliqua sit dolor enim reprehenderit. Mollit duis veniam fugiat minim nostrud ex.
+							</p>
+						</div>
+
+						<div class="footer__links">
+							<a class="footer__link" href="#">SITEMAP</a>
+							<a class="footer__link" href="#">Terms Of&#160;Service</a>
+							<a class="footer__link" href="#">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./js/swiper-bundle.min.js"></script>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

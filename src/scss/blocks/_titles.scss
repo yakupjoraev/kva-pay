@@ -1,3 +1,23 @@
+h1 {
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 92px;
+  line-height: 100%;
+  color: var(--white-color);
+
+  span {
+    color: var(--green);
+  }
+
+  @include tablet {
+    font-size: 72px;
+  }
+
+  @include mobile {
+    font-size: 54px;
+  }
+}
+
 .section-title {
   font-family: var(--font-titles);
   font-size: 64px;
@@ -8,6 +28,10 @@
 
   &--left {
     text-align: left;
+  }
+
+  &--center {
+    text-align: center;
   }
 
   &--large {

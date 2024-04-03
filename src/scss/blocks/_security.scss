@@ -1,0 +1,165 @@
+.security {
+
+  // .security__inner
+
+  &__inner {}
+
+  // .security__list
+
+  &__list {}
+
+  // .security__main
+
+  &__main {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    margin: 160px 0;
+
+    @include tablet {
+      column-gap: 40px;
+      margin: 80px 0;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 32px;
+      column-gap: 24px;
+      margin: 40px 0 0;
+    }
+  }
+
+  // .security__picture
+
+  &__picture {
+    img {
+      max-width: 600px;
+      width: 100%;
+      min-width: 360px;
+      height: auto;
+    }
+
+    @include mobile {
+      min-width: 1px;
+    }
+  }
+
+  // .security__steps
+
+  &__steps {
+    display: grid;
+    row-gap: 24px;
+
+    @include tablet {
+      row-gap: 12px;
+    }
+  }
+
+  // .security__steps-title
+
+  &__steps-title {
+    font-family: var(--font-second);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include tablet {
+      font-size: 36px;
+    }
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  // .security__steps-descr
+
+  &__steps-descr {
+    font-size: 16px;
+    line-height: 120%;
+    color: #888;
+  }
+
+  // .security__steps-list
+
+  &__steps-list {
+    display: grid;
+    row-gap: 32px;
+
+    @include tablet {
+      row-gap: 24px;
+    }
+  }
+
+  // .security__steps-item
+
+  &__steps-item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 32px;
+
+    @include tablet {
+      column-gap: 24px;
+    }
+
+    @include mobile {
+      column-gap: 12px;
+    }
+  }
+
+  // .security__steps-num
+
+  &__steps-num {
+    flex: 0 0 80px;
+    font-family: var(--font-second);
+    font-size: 64px;
+    line-height: 120%;
+    color: var(--green);
+
+    @include tablet {
+      font-size: 48px;
+    }
+
+    @include mobile {
+      flex: 0 0 60px;
+      font-size: 36px;
+    }
+  }
+
+  // .security__steps-info
+
+  &__steps-info {
+    display: grid;
+    row-gap: 8px;
+  }
+
+  // .security__steps-label
+
+  &__steps-label {
+    font-family: var(--font-second);
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--white-color);
+
+    @include tablet {
+      font-size: 24px;
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  // .security__steps-text
+
+  &__steps-text {
+    font-size: 16px;
+    line-height: 120%;
+    color: #888;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}

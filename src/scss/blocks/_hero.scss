@@ -215,3 +215,51 @@
   line-height: 120%;
   color: var(--white-color);
 }
+
+.hero {
+
+  // .hero__post
+
+  &__post {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+
+    @include small-mobile {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+
+  // .hero__post-qr
+
+  &__post-qr {
+    width: 150px;
+    height: 150px;
+
+    img {
+      min-width: 150px;
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  // .hero__post-info
+
+  &__post-info {
+    display: grid;
+    row-gap: 32px;
+  }
+
+  // .hero__post-text
+
+  &__post-text {
+    font-size: 20px;
+    line-height: 120%;
+    color: #888;
+  }
+
+  // .hero__btn
+
+  &__btn {}
+}

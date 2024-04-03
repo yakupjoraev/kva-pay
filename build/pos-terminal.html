@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Main</title>
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container-large">
+				<div class="header__row">
+					<a href="#" class="logo">
+						<img width="144" height="36" src="./img/logo.svg" alt="logo" />
+					</a>
+
+					<nav class="header__nav nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<!-- класс active при добавление к nav__link - станется активной -->
+								<a class="nav__link" href="#">
+									Products
+								</a>
+
+								<svg class="icon icon--arrow-down">
+									<use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+								</svg>
+
+								<ul class="nav__sublist nav__sublist--column-3">
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-basket">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-basket"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Crypto Checkout for e-commerce</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-wallet">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-wallet"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Crypto Wallet</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-link">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-link"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Payment Links</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-bankomat">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-bankomat"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Kvakomat Bitcoin ATMs Network</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-btob">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-btob"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Crypto Exchange</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-terminal">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-terminal"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">POS Terminal</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav__item">
+								<a class="nav__link" href="#">
+									Pricing
+								</a>
+							</li>
+
+							<li class="nav__item">
+								<a class="nav__link" href="#">
+									Company
+								</a>
+
+								<svg class="icon icon--arrow-down">
+									<use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+								</svg>
+
+								<ul class="nav__sublist nav__sublist--column-2">
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-blog">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-blog"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Blog</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-career">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-career"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Career</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-security">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-security"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Security</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-contact">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-contact"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Contact Us</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav__item">
+								<a class="nav__link" href="#">
+									Developers
+								</a>
+
+								<svg class="icon icon--arrow-down">
+									<use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+								</svg>
+
+								<ul class="nav__sublist nav__sublist--column-2">
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-api">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-api"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">API</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-plugins">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-plugins"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">E-commerce Plugins</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+
+									<li class="nav__subitem">
+										<a class="nav__sublink" href="#">
+											<svg class="icon icon--nav-docs">
+												<use href="./img/svgsprite/sprite.symbol.svg#nav-docs"></use>
+											</svg>
+
+											<div class="nav__texts">
+												<h4 class="nav__label">Docs</h4>
+												<p class="nav__text">Mauris fermentum aenean tristique nunc est ut</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav__item"><a class="header__btn header__btn--mobile header__btn--outline" href="#">Sign In</a></li>
+							<li class="nav__item"><a class="header__btn header__btn--mobile header__btn--white" href="#">Sign Up</a></li>
+						</ul>
+					</nav>
+
+					<div class="header__others">
+						<a class="header__language" href="#">
+							<span>EN</span>
+
+							<svg class="icon icon--arrow-down">
+								<use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+							</svg>
+						</a>
+
+						<a class="header__btn header__btn--outline" href="#">Sign In</a>
+						<a class="header__btn header__btn--white" href="#">Sign Up</a>
+					</div>
+
+					<button class="mobile-nav-btn">
+						<div class="nav-icon"></div>
+					</button>
+				</div>
+			</div>
+		</header>
+		<section class="hero section">
+			<div class="container">
+				<div class="hero__inner">
+					<div class="hero__info">
+						<div class="hero__top">
+							<h1 class="hero__title">Mobile <span>Crypto</span> POS Terminal</h1>
+
+							<div class="hero__post">
+								<div class="hero__post-qr">
+									<img src="./img/hero/qr.svg" alt="qr code" />
+								</div>
+								<div class="hero__post-info">
+									<p class="hero__post-text">Turn any mobile device into a&#160;payment terminal. Your phone can become a&#160;point of&#160;sale.</p>
+									<a class="hero__btn btn-primary" href="#">Download App</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="hero__picture hero__picture--not-margin">
+						<img src="./img/hero/hero-bg-7.svg" alt="Alt" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="get section">
+			<div class="container">
+				<div class="get__inner">
+					<div class="section-head">
+						<p class="section-text">Mobile app POS terminal</p>
+						<h3 class="section-title">Accept crypto payments anywhere</h3>
+					</div>
+
+					<ul class="get__list">
+						<li class="get__item">
+							<div class="get__icon">
+								<svg class="icon icon--get icon--get-post">
+									<use href="./img/svgsprite/sprite.symbol.svg#flag"></use>
+								</svg>
+							</div>
+							<h4 class="get__label">No&#160;programming</h4>
+							<p class="get__descr">Download it&#160;in&#160;a&#160;minute and accept contactless crypto payments via mobile</p>
+						</li>
+
+						<li class="get__item">
+							<div class="get__icon">
+								<svg class="icon icon--get icon--get-post">
+									<use href="./img/svgsprite/sprite.symbol.svg#currency-exchange-rounded"></use>
+								</svg>
+							</div>
+							<h4 class="get__label">Universally</h4>
+							<p class="get__descr">For small businesses and large businesses</p>
+						</li>
+
+						<li class="get__item">
+							<div class="get__icon">
+								<svg class="icon icon--get icon--get-post">
+									<use href="./img/svgsprite/sprite.symbol.svg#wallet"></use>
+								</svg>
+							</div>
+							<h4 class="get__label">Profitable</h4>
+							<p class="get__descr">No&#160;chargebacks and bank charges</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="works section">
+			<div class="container">
+				<div class="works__inner">
+					<div class="section-head">
+						<p class="section-text">Mobile app POS terminal</p>
+						<h3 class="section-title">Accept crypto payments anywhere</h3>
+					</div>
+
+					<div class="works__main">
+						<div class="works__list">
+							<div class="works__item">
+								<div class="works__item-num">01</div>
+								<h4 class="works__item-label">QR&#160;Invoice</h4>
+								<p class="works__Item-text">KvaPay App displays the invoice</p>
+
+								<div class="works__arrow">
+									<svg class="icon icon--works-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#works-arrow"></use>
+									</svg>
+								</div>
+							</div>
+
+							<div class="works__item">
+								<div class="works__item-num">02</div>
+								<h4 class="works__item-label">Crypto payment</h4>
+								<p class="works__Item-text">Your customer pays the KvaPay invoice</p>
+
+								<div class="works__arrow">
+									<svg class="icon icon--works-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#works-arrow"></use>
+									</svg>
+								</div>
+							</div>
+
+							<div class="works__item">
+								<div class="works__item-num">03</div>
+								<h4 class="works__item-label">Conversion</h4>
+								<p class="works__Item-text">Upon request, KvaPay will convert the customer&#8217;s payment to&#160;Euro at&#160;the current exchange rate</p>
+
+								<div class="works__arrow">
+									<svg class="icon icon--works-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#works-arrow"></use>
+									</svg>
+								</div>
+							</div>
+
+							<div class="works__item">
+								<div class="works__item-num">04</div>
+								<h4 class="works__item-label">Money transfer</h4>
+								<p class="works__Item-text">KvaPay initiates a&#160;bank settlement with you</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="currencies section">
+			<div class="container">
+				<div class="currencies__inner">
+					<div class="section-head">
+						<p class="section-text">Simple. Quick. Safe.</p>
+						<h3 class="section-title">You can accept payment in&#160;all popular cryptocurrencies</h3>
+					</div>
+
+					<div class="currencies__slider swiper mySwiper">
+						<div class="currencies__slider-wrapper swiper-wrapper">
+							<div class="currencies__slide swiper-slide">
+								<svg class="icon icon--token">
+									<use href="./img/svgsprite/sprite.symbol.svg#ephirium"></use>
+								</svg>
+							</div>
+
+							<div class="currencies__slide swiper-slide">
+								<svg class="icon icon--token">
+									<use href="./img/svgsprite/sprite.symbol.svg#bitcoin"></use>
+								</svg>
+							</div>
+
+							<div class="currencies__slide swiper-slide">
+								<svg class="icon icon--token">
+									<use href="./img/svgsprite/sprite.symbol.svg#dogecoin"></use>
+								</svg>
+							</div>
+
+							<div class="currencies__slide swiper-slide">
+								<svg class="icon icon--token">
+									<use href="./img/svgsprite/sprite.symbol.svg#ephirium-2"></use>
+								</svg>
+							</div>
+
+							<div class="currencies__slide swiper-slide">
+								<svg class="icon--token-lightning" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1.5 30.1071C1.5 14.3076 14.3076 1.5 30.1071 1.5C45.9066 1.5 58.7143 14.3076 58.7143 30.1071C58.7143 45.9066 45.9066 58.7143 30.1071 58.7143C14.3076 58.7143 1.5 45.9066 1.5 30.1071Z"
+										fill="#A7BED3"
+									/>
+									<path
+										d="M34.5416 11.0357C32.8361 15.463 31.1305 20.2309 29.0838 24.9987C29.0838 24.9987 29.0838 25.6798 29.766 25.6798H43.7517C43.7517 25.6798 43.7517 26.0204 44.0929 26.361L23.626 49.1786C23.2848 48.838 23.2848 48.4974 23.2848 48.1569L30.4483 32.8316V31.4694H16.1214V30.1071L33.5183 11.0357H34.5416Z"
+										fill="#0C1220"
+									/>
+								</svg>
+							</div>
+
+							<div class="currencies__slide swiper-slide">
+								<svg class="icon icon--token">
+									<use href="./img/svgsprite/sprite.symbol.svg#litecoin"></use>
+								</svg>
+							</div>
+
+							<div class="currencies__slide swiper-slide">
+								<svg class="icon icon--token">
+									<use href="./img/svgsprite/sprite.symbol.svg#polygon"></use>
+								</svg>
+							</div>
+
+							<div class="currencies__slide swiper-slide">
+								<svg class="icon icon--token">
+									<use href="./img/svgsprite/sprite.symbol.svg#tron-trx"></use>
+								</svg>
+							</div>
+
+							<div class="currencies__slide swiper-slide">
+								<svg class="icon icon--token">
+									<use href="./img/svgsprite/sprite.symbol.svg#usdt"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="best-market best-market--small section">
+			<div class="container">
+				<div class="best-market__inner">
+					<div class="best-market__list">
+						<div class="best-market__item">
+							<div class="best-market__picture">
+								<img src="./img/best-market/8.svg" alt="Alt" />
+							</div>
+							<div class="best-market__info">
+								<h4 class="best-market__label">You will be&#160;able to&#160;avoid buying or&#160;renting expensive payment equipment</h4>
+								<p class="best-market__descr">
+									Reduce your costs by&#160;utilizing our POS payment solution. Just register, install the app and you will be able to&#160;accept payments
+									in&#160;cryptocurrency
+								</p>
+							</div>
+						</div>
+
+						<div class="best-market__item">
+							<div class="best-market__picture">
+								<img src="./img/best-market/9.svg" alt="Alt" />
+							</div>
+							<div class="best-market__info">
+								<h4 class="best-market__label">Say goodbye to&#160;complicated machinery</h4>
+								<p class="best-market__descr">
+									Our mobile application is&#160;so&#160;simple that even a&#160;child can use&#160;it. You don&#8217;t need to&#160;spend time studying manuals and
+									user instructions.
+								</p>
+							</div>
+						</div>
+
+						<div class="best-market__item">
+							<div class="best-market__picture">
+								<img src="./img/best-market/10.svg" alt="Alt" />
+							</div>
+							<div class="best-market__info">
+								<h4 class="best-market__label">Fully contactless payment method</h4>
+								<p class="best-market__descr">
+									Your customer does not need to&#160;put their card in&#160;the hands of&#160;another person. High-tech and fast payment process.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="banner-block section">
+			<div class="container">
+				<div class="banner-block__inner">
+					<div class="banner-block__info">
+						<h4 class="banner-block__title">Download KvaPay POS in&#160;a&#160;minute and accept payments in&#160;seconds</h4>
+						<ul class="banner-block__list">
+							<li class="banner-block__item">
+								<div class="banner-block__item-icon">
+									<svg class="icon icon--ci_check">
+										<use href="./img/svgsprite/sprite.symbol.svg#ci_check"></use>
+									</svg>
+								</div>
+								<p class="banner-block__item-text">You don&#8217;t need to&#160;buy new equipment, you can just use your cell phone</p>
+							</li>
+
+							<li class="banner-block__item">
+								<div class="banner-block__item-icon">
+									<svg class="icon icon--ci_check">
+										<use href="./img/svgsprite/sprite.symbol.svg#ci_check"></use>
+									</svg>
+								</div>
+								<p class="banner-block__item-text">15+ coins and autoconversion</p>
+							</li>
+
+							<li class="banner-block__item">
+								<div class="banner-block__item-icon">
+									<svg class="icon icon--ci_check">
+										<use href="./img/svgsprite/sprite.symbol.svg#ci_check"></use>
+									</svg>
+								</div>
+								<p class="banner-block__item-text">Encryption of&#160;payment data is&#160;carried out in&#160;accordance with international standards</p>
+							</li>
+						</ul>
+
+						<div class="banner-block__footer">
+							<a class="banner-block__btn btn-outline" href="#">Get KvaPay POS</a>
+						</div>
+					</div>
+
+					<div class="banner-block__picture">
+						<picture>
+							<source srcset="./img/banner-block/Device.webp 1x, ./img/banner-block/Device@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/banner-block/Device.png 1x, ./img/banner-block/Device@2x.png 2x" type="image/png" />
+							<img src="./img/banner-block/Device.png" srcset="./img/banner-block/Device@2x.png" alt="Alt" />
+						</picture>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="faq section">
+			<div class="container">
+				<div class="faq__inner">
+					<div class="section-head">
+						<h3 class="section-title">Got Questions?</h3>
+					</div>
+
+					<div class="faq__accardion">
+						<!-- Accordion -->
+						<div class="accordion">
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">Vulputate magna ut&#160;nunc est sed tellus quis. Odio in&#160;odio consectetur dui?</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium blanditiis assumenda voluptatibus voluptatum unde tenetur, ullam
+											repellat laborum possimus recusandae&#160;ea! Rerum accusantium sunt consectetur aut voluptatum voluptatem architecto fugit. Illum
+											ex&#160;totam et&#160;saepe animi blanditiis atque impedit quis cupiditate amet? Similique aperiam dolores eum quos mollitia consequuntur
+											molestiae. Tempora atque dolore eius distinctio omnis reprehenderit quae repellat quibusdam!
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">
+										Euismod urna sit feugiat viverra nunc tempus fermentum. Semper et&#160;ultrices volutpat mi&#160;nisl faucibus?
+									</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, numquam.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">Vulputate magna ut&#160;nunc est sed tellus quis. Odio in&#160;odio consectetur dui?</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">
+										Euismod urna sit feugiat viverra nunc tempus fermentum. Semper et&#160;ultrices volutpat mi&#160;nisl faucibus?
+									</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">Vulputate magna ut&#160;nunc est sed tellus quis. Odio in&#160;odio consectetur dui?</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">
+										Euismod urna sit feugiat viverra nunc tempus fermentum. Semper et&#160;ultrices volutpat mi&#160;nisl faucibus?
+									</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion__item" data-accordion-item>
+								<div class="accordion__header">
+									<h4 class="accordion__header-label title-h4">Vulputate magna ut&#160;nunc est sed tellus quis. Odio in&#160;odio consectetur dui?</h4>
+
+									<svg class="icon icon--accordion-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#accordion-arrow"></use>
+									</svg>
+								</div>
+								<div class="accordion__content">
+									<div class="accordion__texts">
+										<p>
+											Tincidunt enim consequat sit purus faucibus. Scelerisque velit iaculis in&#160;pellentesque luctus morbi mauris dui&#160;est. Massa semper
+											integer risus bibendum eu&#160;ut. Dui dolor ut&#160;nibh in&#160;sit malesuada diam.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container-large">
+				<div class="footer__inner">
+					<div class="footer__top">
+						<div class="footer__left">
+							<a class="footer__logo" href="#">
+								<img src="./img/logo.svg" width="144" height="36" alt="logo" />
+							</a>
+
+							<nav class="footer__nav">
+								<ul class="footer__nav-list">
+									<li class="footer__nav-item footer__nav-item--label">Products</li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Crypto Payments</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Payment Link</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Crypto Wallet</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">POS Terminal</a></li>
+								</ul>
+
+								<ul class="footer__nav-list">
+									<li class="footer__nav-item footer__nav-item--label">Crypto Exchange</li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Buy Bitcoin</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Buy Litecoin</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Buy Ethereum</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Buy Tether</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Buy Crypto</a></li>
+								</ul>
+
+								<ul class="footer__nav-list">
+									<li class="footer__nav-item footer__nav-item--label">Developers</li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">API</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Docs</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Plugins</a></li>
+								</ul>
+
+								<ul class="footer__nav-list">
+									<li class="footer__nav-item footer__nav-item--label">Company</li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Contact Us</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Career</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Pricing</a></li>
+									<li class="footer__nav-item"><a class="footer__nav-link" href="#">Blog</a></li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="footer__right">
+							<ul class="footer__socials socials">
+								<li class="socials__item">
+									<a class="socials__link active" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#telegram"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#medium"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#linkedIn"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#twitter"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#crunchbase"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#discord"></use>
+										</svg>
+									</a>
+								</li>
+
+								<li class="socials__item">
+									<a class="socials__link" href="#">
+										<svg class="icon icon--social">
+											<use href="./img/svgsprite/sprite.symbol.svg#github"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+
+							<form action="#" class="footer__form form-subscribe">
+								<div class="form-subscribe__texts">
+									<h3 class="form-subscribe__label title-h3">Subscribe to&#160;our website</h3>
+									<p class="form-subscribe__text">For announcements and exclusive deals</p>
+								</div>
+
+								<div class="form-subscribe__row">
+									<input class="form-subscribe__input" type="email" />
+									<button type="submit" class="form-subscribe__btn btn-primary">Subscribe</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="footer__bottom">
+						<div class="footer__copyright">
+							<p>
+								&#169; 2024 KvaPay. Pariatur culpa in&#160;reprehenderit culpa proident ut&#160;laboris ut&#160;consectetur excepteur sit ipsum eu&#160;quis deserunt.
+								Enim minim officia sunt veniam consectetur culpa dolore ea&#160;occaecat sint non sit cupidatat id&#160;non anim amet officia ipsum.Labore consectetur
+								Lorem aute aliquip laborum non aliqua sit dolor enim reprehenderit. Mollit duis veniam fugiat minim nostrud ex.
+							</p>
+						</div>
+
+						<div class="footer__links">
+							<a class="footer__link" href="#">SITEMAP</a>
+							<a class="footer__link" href="#">Terms Of&#160;Service</a>
+							<a class="footer__link" href="#">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./js/swiper-bundle.min.js"></script>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

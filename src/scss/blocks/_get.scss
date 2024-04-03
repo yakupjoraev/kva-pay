@@ -12,6 +12,10 @@
     column-gap: 40px;
     row-gap: 40px;
 
+    &--column-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -122,6 +126,11 @@
 .icon--server-get--magento {
   width: 232px;
   height: 66px;
+}
+
+.icon--get-post {
+  width: 100px;
+  height: 100px;
 }
 
 .server-get {

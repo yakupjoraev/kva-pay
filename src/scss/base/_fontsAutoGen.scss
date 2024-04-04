@@ -15,15 +15,50 @@
 @font-face {
 	font-family: GolosText;
 	font-display: swap;
-	src: url("../fonts/GolosText-Medium.woff2") format("woff2"), url("../fonts/GolosText-Medium.woff") format("woff");
-	font-weight: 500;
+	src: url("../fonts/GolosText-ExtraBold.woff2") format("woff2"), url("../fonts/GolosText-ExtraBold.woff") format("woff");
+	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
 	font-family: GolosText;
 	font-display: swap;
-	src: url("../fonts/GolosText-ExtraBold.woff2") format("woff2"), url("../fonts/GolosText-ExtraBold.woff") format("woff");
+	src: url("../fonts/GolosText-Regular.woff2") format("woff2"), url("../fonts/GolosText-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Magistral;
+	font-display: swap;
+	src: url("../fonts/Magistral-Bold.woff2") format("woff2"), url("../fonts/Magistral-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: GolosText;
+	font-display: swap;
+	src: url("../fonts/GolosText-Medium.woff2") format("woff2"), url("../fonts/GolosText-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: Magistral;
+	font-display: swap;
+	src: url("../fonts/Magistral-ExtraBold.woff2") format("woff2"), url("../fonts/Magistral-ExtraBold.woff") format("woff");
 	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: Magistral;
+	font-display: swap;
+	src: url("../fonts/Magistral-Book.woff2") format("woff2"), url("../fonts/Magistral-Book.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Magistral;
+	font-display: swap;
+	src: url("../fonts/Magistral-Light.woff2") format("woff2"), url("../fonts/Magistral-Light.woff") format("woff");
+	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
@@ -38,27 +73,6 @@
 	font-display: swap;
 	src: url("../fonts/GolosText-SemiBold.woff2") format("woff2"), url("../fonts/GolosText-SemiBold.woff") format("woff");
 	font-weight: 600;
-	font-style: normal;
-}
-@font-face {
-	font-family: Magistral;
-	font-display: swap;
-	src: url("../fonts/Magistral-Book.woff2") format("woff2"), url("../fonts/Magistral-Book.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-	font-family: Magistral;
-	font-display: swap;
-	src: url("../fonts/Magistral-ExtraBold.woff2") format("woff2"), url("../fonts/Magistral-ExtraBold.woff") format("woff");
-	font-weight: 800;
-	font-style: normal;
-}
-@font-face {
-	font-family: Magistral;
-	font-display: swap;
-	src: url("../fonts/Magistral-Light.woff2") format("woff2"), url("../fonts/Magistral-Light.woff") format("woff");
-	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
@@ -80,20 +94,6 @@
 	font-display: swap;
 	src: url("../fonts/Montserrat-BoldItalic.woff2") format("woff2"), url("../fonts/Montserrat-BoldItalic.woff") format("woff");
 	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-	font-family: GolosText;
-	font-display: swap;
-	src: url("../fonts/GolosText-Regular.woff2") format("woff2"), url("../fonts/GolosText-Regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-	font-family: Magistral;
-	font-display: swap;
-	src: url("../fonts/Magistral-Bold.woff2") format("woff2"), url("../fonts/Magistral-Bold.woff") format("woff");
-	font-weight: 700;
 	font-style: normal;
 }
 @font-face {

@@ -49,6 +49,7 @@
       background-position: right bottom;
       /* x y */
       background-repeat: no-repeat;
+      background-size: 300px;
 
       @include mediaBg() {
         background-image: url('./../img/explore-products/Cash_Register@2x.png');
@@ -70,6 +71,7 @@
       background-position: right bottom;
       /* x y */
       background-repeat: no-repeat;
+      background-size: 300px;
 
       @include mediaBg() {
         background-image: url('./../img/explore-products/Kvakomat 1@2x.png');
@@ -91,6 +93,7 @@
       background-position: right bottom;
       /* x y */
       background-repeat: no-repeat;
+      background-size: 200px;
 
       @include mediaBg() {
         background-image: url('./../img/explore-products/Device@2x.png');
@@ -112,6 +115,7 @@
       background-position: right bottom;
       /* x y */
       background-repeat: no-repeat;
+      background-size: 200px;
 
       @include mediaBg() {
         background-image: url('./../img/explore-products/Object@2x.png');
@@ -133,6 +137,7 @@
       background-position: right bottom;
       /* x y */
       background-repeat: no-repeat;
+      background-size: 250px;
 
       @include mediaBg() {
         background-image: url('./../img/explore-products/Payment@2x.png');
@@ -154,6 +159,7 @@
       background-position: right bottom;
       /* x y */
       background-repeat: no-repeat;
+      background-size: 200px;
 
       @include mediaBg() {
         background-image: url('./../img/explore-products/DeviceTerminal@2x.png');

@@ -56,6 +56,7 @@
 
       @media (max-width: 1520px) {
         flex: 0 1 calc(50% - 20px);
+        background-size: 300px;
       }
 
       @include small-mobile {
@@ -76,6 +77,7 @@
 
       @media (max-width: 1520px) {
         flex: 0 1 calc(50% - 20px);
+        background-size: 300px;
       }
 
       @include small-mobile {
@@ -96,6 +98,7 @@
 
       @media (max-width: 1520px) {
         flex: 0 1 calc(40% - 20px);
+        background-size: 200px;
       }
 
       @include small-mobile {
@@ -116,6 +119,7 @@
 
       @media (max-width: 1520px) {
         flex: 0 1 calc(60% - 20px);
+        background-size: 200px;
       }
 
       @include small-mobile {
@@ -136,6 +140,7 @@
 
       @media (max-width: 1520px) {
         flex: 0 1 calc(50% - 20px);
+        background-size: 250px;
       }
 
       @include small-mobile {
@@ -156,6 +161,7 @@
 
       @media (max-width: 1520px) {
         flex: 0 1 calc(50% - 20px);
+        background-size: 200px;
       }
 
       @include small-mobile {
@@ -164,8 +170,8 @@
     }
 
     @media (max-width: 1520px) {
-      padding: 40px;
-      min-height: 400px;
+      padding: 32px;
+      min-height: 360px;
     }
 
     @include tablet {
@@ -210,6 +216,10 @@
     line-height: 120%;
     color: var(--white-color);
 
+    @media (max-width: 1520px) {
+      font-size: 34px;
+    }
+
     @include mobile {
       font-size: 30px;
     }
@@ -243,6 +253,10 @@
 
     @include small-mobile {
       font-size: 16px;
+    }
+
+    @media (max-width: 1520px) {
+      font-size: 18px;
     }
   }
 }

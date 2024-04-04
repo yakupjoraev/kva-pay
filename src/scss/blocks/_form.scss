@@ -88,6 +88,7 @@
   // .form__group
 
   &__group {
+    position: relative;
     display: flex;
     flex-direction: column;
     row-gap: 12px;
@@ -144,6 +145,30 @@
     width: 100%;
     height: 60px;
   }
+
+  &__group--icon {
+
+    .form__input {
+      padding: 8px 50px;
+    }
+
+  }
+
+  // .form__icon
+
+  &__icon {
+    position: absolute;
+    left: 12px;
+    bottom: 34px;
+    width: 22px;
+    height: 2px;
+  }
+
+  &__icon--right {
+    left: auto;
+    right: 12px;
+    background-color: transparent;
+  }
 }
 
 .form {
@@ -190,4 +215,29 @@
     line-height: 120%;
     color: #ededed;
   }
+}
+
+.form__forget {
+  width: fit-content;
+  margin-left: auto;
+
+  font-size: 12px;
+  line-height: 120%;
+  text-decoration: underline !important;
+  transition: all 0.2s ease-in;
+
+  color: var(--green);
+}
+
+
+.icon--form-icon {
+  width: 22px;
+  height: 22px;
+  fill: #3C4B6D;
+  // stroke: #3C4B6D;
+}
+
+.icon--form-icon-eye {
+  fill: transparent;
+  stroke: #3C4B6D;
 }

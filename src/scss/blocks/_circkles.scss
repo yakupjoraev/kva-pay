@@ -29,6 +29,18 @@
   transform: translateY(-50%);
 }
 
+.decor-bg--top-right-3 {
+  right: 0;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+.decor-bg--top-right-4 {
+  right: 0;
+  top: 54%;
+  transform: translateY(-50%);
+}
+
 
 .decor-bg--top-left {
   top: 12%;
@@ -44,6 +56,19 @@
 
 .decor-bg--top-left-3 {
   top: 30%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.decor-bg--top-left-4 {
+  top: 110%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.decor-bg--top-left-5 {
+  width: 100%;
+  top: 60%;
   transform: translateY(-50%);
   left: 0;
 }

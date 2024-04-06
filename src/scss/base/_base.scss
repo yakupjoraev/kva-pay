@@ -34,6 +34,29 @@ pre.code {
   border-radius: 4px;
 }
 
+.top-btn {
+  position: absolute;
+  top: calc(100% - 10px);
+  right: 0;
+  width: 60px;
+  height: 60px;
+
+  @media (hover:hover) {
+    &:hover .icon--up {
+      fill: var(--green);
+      stroke: var(--white-color);
+    }
+  }
+}
+
+.icon--up {
+  width: 60px;
+  height: 60px;
+  fill: transparent;
+  stroke: var(--white-color);
+}
+
+
 .wrapper {
   overflow: hidden;
 }
@@ -51,6 +74,23 @@ pre.code {
 
   @include small-mobile {
     margin: 40px 0;
+  }
+
+  &--small-margin {
+    position: relative;
+    z-index: 1;
+    margin: 80px 0 160px;
+
+
+
+    @include tablet {
+      margin: 40px 0 80px;
+    }
+
+    @include small-mobile {
+      margin: 40px 0;
+    }
+
   }
 }
 

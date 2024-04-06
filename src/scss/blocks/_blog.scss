@@ -1,5 +1,13 @@
 .blog {
 
+  &.section {
+    margin-top: 80px;
+
+    @include tablet {
+      margin-top: 40px;
+    }
+  }
+
   // .blog__inner
 
   &__inner {}

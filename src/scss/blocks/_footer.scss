@@ -9,16 +9,17 @@
   }
 
   @include tablet {
-    padding: 60px 0;
+    padding: 60px 0 80px;
   }
 
   @include small-mobile {
-    padding: 40px 0;
+    padding: 40px 0 80px;
   }
 
   // .footer__inner
 
   &__inner {
+    position: relative;
     display: flex;
     flex-direction: column;
     row-gap: 100px;

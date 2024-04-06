@@ -22,8 +22,8 @@
 
 .accordion__item.active .accordion__header svg {
   transform: rotate(180deg);
-  fill: var(--green);
-  stroke: var(--green);
+  fill: var(--white-color);
+  stroke: var(--white-color);
 }
 
 .accordion__header {
@@ -38,8 +38,8 @@
     width: 16px;
     min-width: 16px;
     height: 9px;
-    fill: var(--white-color);
-    stroke: var(--white-color);
+    fill: var(--green);
+    stroke: var(--green);
     transition: transform 0.2s ease-in;
   }
 

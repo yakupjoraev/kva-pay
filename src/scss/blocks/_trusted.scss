@@ -1,5 +1,5 @@
 .trusted {
-  overflow: hidden;
+  // overflow: hidden;
 
   // .trusted__inner
 
@@ -34,6 +34,31 @@
     padding: 72px 100px;
     border-radius: 48px;
     background-color: #0c1220;
+
+    & * {
+      transition: color 0.2s ease-in, opacity 0.2s ease-in, fill 0.1s ease-in;
+    }
+
+    &.swiper-slide-next,
+    &.swiper-slide-prev {
+
+      .icon--trusted-slide-decor {
+        fill: #162F49;
+      }
+
+      .trusted__slide-picture img {
+        opacity: 0.2;
+      }
+
+      .trusted__slide-name,
+      .trusted__slide-label,
+      .trusted__slide-position,
+      .trusted__slide-descr {
+        color: #27324a;
+      }
+
+
+    }
 
     @include mobile {
       column-gap: 40px;

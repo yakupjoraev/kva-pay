@@ -25,6 +25,7 @@
   // .explore-products__item
 
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,7 +36,7 @@
 
     @media (hover:hover) {
       &:hover {
-        background-color: #39d24e;
+        background: var(--gradient-bg) !important;
 
         .explore-products__item-label {
           font-weight: 700;
@@ -43,136 +44,169 @@
       }
     }
 
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+
     &:nth-child(1) {
       flex: 0 1 710px;
-      background-image: url('./../img/explore-products/Cash_Register.png');
-      background-position: right bottom;
-      /* x y */
-      background-repeat: no-repeat;
-      background-size: 340px;
 
-      @include mediaBg() {
-        background-image: url('./../img/explore-products/Cash_Register@2x.png');
+      &::before {
+        background-image: url('./../img/explore-products/Cash_Register.png');
+        background-position: right bottom;
+        /* x y */
+        background-repeat: no-repeat;
+        background-size: 340px;
+
+        @include mediaBg() {
+          background-image: url('./../img/explore-products/Cash_Register@2x.png');
+        }
+
+        @media (max-width: 1520px) {
+          flex: 0 1 calc(50% - 20px);
+          background-size: 300px;
+        }
+
+        @include small-mobile {
+          background-size: 50%;
+        }
       }
 
-      @media (max-width: 1520px) {
-        flex: 0 1 calc(50% - 20px);
-        background-size: 300px;
-      }
-
-      @include small-mobile {
-        background-size: 50%;
-      }
     }
 
     &:nth-child(2) {
       flex: 0 1 710px;
-      background-image: url('./../img/explore-products/Kvakomat 1.png');
-      background-position: right bottom;
-      /* x y */
-      background-repeat: no-repeat;
-      background-size: 340px;
 
-      @include mediaBg() {
-        background-image: url('./../img/explore-products/Kvakomat 1@2x.png');
+      &::before {
+        background-image: url('./../img/explore-products/Kvakomat 1.png');
+        background-position: right bottom;
+        /* x y */
+        background-repeat: no-repeat;
+        background-size: 340px;
+
+        @include mediaBg() {
+          background-image: url('./../img/explore-products/Kvakomat 1@2x.png');
+        }
+
+        @media (max-width: 1520px) {
+          flex: 0 1 calc(50% - 20px);
+          background-size: 300px;
+        }
+
+        @include small-mobile {
+          background-size: 50%;
+        }
       }
 
-      @media (max-width: 1520px) {
-        flex: 0 1 calc(50% - 20px);
-        background-size: 300px;
-      }
-
-      @include small-mobile {
-        background-size: 50%;
-      }
     }
 
     &:nth-child(3) {
       flex: 0 1 600px;
-      background-image: url('./../img/explore-products/Device.png');
-      background-position: right bottom;
-      /* x y */
-      background-repeat: no-repeat;
-      background-size: 240px;
 
-      @include mediaBg() {
-        background-image: url('./../img/explore-products/Device@2x.png');
+      &::before {
+        background-image: url('./../img/explore-products/Device.png');
+        background-position: right bottom;
+        /* x y */
+        background-repeat: no-repeat;
+        background-size: 240px;
+
+        @include mediaBg() {
+          background-image: url('./../img/explore-products/Device@2x.png');
+        }
+
+        @media (max-width: 1520px) {
+          flex: 0 1 calc(40% - 20px);
+          background-size: 200px;
+        }
+
+        @include small-mobile {
+          background-size: 45%;
+        }
       }
 
-      @media (max-width: 1520px) {
-        flex: 0 1 calc(40% - 20px);
-        background-size: 200px;
-      }
-
-      @include small-mobile {
-        background-size: 45%;
-      }
     }
 
     &:nth-child(4) {
       flex: 0 1 820px;
-      background-image: url('./../img/explore-products/Object.png');
-      background-position: right bottom;
-      /* x y */
-      background-repeat: no-repeat;
-      background-size: 280px;
 
-      @include mediaBg() {
-        background-image: url('./../img/explore-products/Object@2x.png');
+      &::before {
+        background-image: url('./../img/explore-products/Object.png');
+        background-position: right bottom;
+        /* x y */
+        background-repeat: no-repeat;
+        background-size: 280px;
+
+        @include mediaBg() {
+          background-image: url('./../img/explore-products/Object@2x.png');
+        }
+
+        @media (max-width: 1520px) {
+          flex: 0 1 calc(60% - 20px);
+          background-size: 200px;
+        }
+
+        @include small-mobile {
+          background-size: 45%;
+        }
       }
 
-      @media (max-width: 1520px) {
-        flex: 0 1 calc(60% - 20px);
-        background-size: 200px;
-      }
-
-      @include small-mobile {
-        background-size: 45%;
-      }
     }
 
     &:nth-child(5) {
       flex: 0 1 710px;
-      background-image: url('./../img/explore-products/Payment.png');
-      background-position: right bottom;
-      /* x y */
-      background-repeat: no-repeat;
-      background-size: 320px;
 
-      @include mediaBg() {
-        background-image: url('./../img/explore-products/Payment@2x.png');
+      &::before {
+        background-image: url('./../img/explore-products/Payment.png');
+        background-position: right bottom;
+        /* x y */
+        background-repeat: no-repeat;
+        background-size: 320px;
+
+        @include mediaBg() {
+          background-image: url('./../img/explore-products/Payment@2x.png');
+        }
+
+        @media (max-width: 1520px) {
+          flex: 0 1 calc(50% - 20px);
+          background-size: 250px;
+        }
+
+        @include small-mobile {
+          background-size: 50%;
+        }
       }
 
-      @media (max-width: 1520px) {
-        flex: 0 1 calc(50% - 20px);
-        background-size: 250px;
-      }
-
-      @include small-mobile {
-        background-size: 50%;
-      }
     }
 
     &:nth-child(6) {
       flex: 0 1 710px;
-      background-image: url('./../img/explore-products/DeviceTerminal.png');
-      background-position: right bottom;
-      /* x y */
-      background-repeat: no-repeat;
-      background-size: 240px;
 
-      @include mediaBg() {
-        background-image: url('./../img/explore-products/DeviceTerminal@2x.png');
+      &::before {
+        background-image: url('./../img/explore-products/DeviceTerminal.png');
+        background-position: right bottom;
+        /* x y */
+        background-repeat: no-repeat;
+        background-size: 240px;
+
+        @include mediaBg() {
+          background-image: url('./../img/explore-products/DeviceTerminal@2x.png');
+        }
+
+        @media (max-width: 1520px) {
+          flex: 0 1 calc(50% - 20px);
+          background-size: 200px;
+        }
+
+        @include small-mobile {
+          background-size: 40%;
+        }
       }
 
-      @media (max-width: 1520px) {
-        flex: 0 1 calc(50% - 20px);
-        background-size: 200px;
-      }
-
-      @include small-mobile {
-        background-size: 40%;
-      }
     }
 
     @media (max-width: 1520px) {
@@ -181,7 +215,7 @@
     }
 
     @include tablet {
-      flex: 0 1 100%;
+      flex: 0 1 100% !important;
     }
 
     @include mobile {
@@ -191,7 +225,6 @@
     @include small-mobile {
       justify-content: flex-start;
       padding: 24px;
-      // background-image: none !important;
     }
   }
 

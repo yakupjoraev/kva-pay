@@ -1,7 +1,7 @@
 function trustedSlider() {
   const swiper = new Swiper('.trusted__slider', {
     // Optional parameters
-    // loop: true,
+    loop: true,
     centeredSlides: true,
     slidesPerView: 1.1,
     spaceBetween: 10,

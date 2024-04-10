@@ -1,11 +1,13 @@
 .accordion {
-  column-count: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
-  row-gap: 18px;
+  // row-gap: 18px;
 
   @include mobile {
     display: flex;
     flex-direction: column;
+    row-gap: 18px;
   }
 }
 
@@ -40,7 +42,7 @@
     height: 9px;
     fill: var(--green);
     stroke: var(--green);
-    transition: transform 0.2s ease-in;
+    transition: transform 0.3s ease-in;
   }
 
   @include mobile {
@@ -62,7 +64,7 @@
   font-size: 16px;
   line-height: 140%;
   color: var(--text-color);
-  transition: max-height 0.2s ease, padding 0.2s ease;
+  transition: max-height 0.4s ease, padding 0.4s ease;
 
   a {
     color: var(--primary-color);
@@ -79,7 +81,7 @@
 
 .accordion__item.active .accordion__content {
   padding: 0 40px 32px;
-  max-height: 600px;
+  max-height: 400px;
 
   @include mobile {
     padding: 0 24px 24px;
@@ -87,6 +89,7 @@
 
   @include small-mobile {
     padding: 0 16px 16px;
+    max-height: 800px;
   }
 
 }

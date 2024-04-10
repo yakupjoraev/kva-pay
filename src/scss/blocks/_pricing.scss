@@ -144,6 +144,12 @@
   &__item-btn {
     width: 100%;
     height: 60px;
+
+    @media (hover:hover) {
+      &.btn-outline:hover {
+        border-color: transparent;
+      }
+    }
   }
 
   // .pricing__item--active

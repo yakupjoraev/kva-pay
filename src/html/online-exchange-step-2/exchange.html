@@ -27,57 +27,61 @@
       <form class="exchange__form form" action="#">
         <p class="exchange__form-label">Exchange EUR for BTC</p>
 
-        <div class="exchange__block">
-          <p class="exchange__block-label">From</p>
-          <div class="exchange__rows">
-            <div class="exchange__row">
-              <p class="exchange__name">Euro — Euro SWIFT/SEPA</p>
+        <div class="exchange__block-wrapper">
+          <div class="exchange__block">
+            <p class="exchange__block-label">From</p>
+            <div class="exchange__rows">
+              <div class="exchange__row">
+                <p class="exchange__name">Euro — Euro SWIFT/SEPA</p>
 
-              <button type="button" class="exchange__arrow">
-                <svg class="icon icon--arrow-down">
-                  <use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
-                </svg>
-              </button>
-            </div>
+                <button type="button" class="exchange__arrow">
+                  <svg class="icon icon--arrow-down">
+                    <use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+                  </svg>
+                </button>
+              </div>
 
-            <div class="exchange__row">
-              <input class="exchange__input" type="number">
-              <div class="exchange__token">
-                <img src="./../img/exchange/solar_euro-bold.svg" alt="solar">
+              <div class="exchange__row">
+                <input class="exchange__input" type="number">
+                <div class="exchange__token">
+                  <img src="./../img/exchange/solar_euro-bold.svg" alt="solar">
+                </div>
               </div>
             </div>
+
           </div>
 
-        </div>
+          <div class="exchange__form-arrow">
+            <svg class="icon icon--entypo_arrow-up">
+              <use href="./img/svgsprite/sprite.symbol.svg#entypo_arrow-up"></use>
+            </svg>
+          </div>
 
-        <div class="exchange__form-arrow">
-          <svg class="icon icon--entypo_arrow-up">
-            <use href="./img/svgsprite/sprite.symbol.svg#entypo_arrow-up"></use>
-          </svg>
-        </div>
+          <div class="exchange__block">
+            <p class="exchange__block-label">To</p>
+            <div class="exchange__rows">
+              <div class="exchange__row">
+                <p class="exchange__name">Bitcoin BTC</p>
 
-        <div class="exchange__block">
-          <p class="exchange__block-label">To</p>
-          <div class="exchange__rows">
-            <div class="exchange__row">
-              <p class="exchange__name">Bitcoin BTC</p>
+                <button type="button" class="exchange__arrow">
+                  <svg class="icon icon--arrow-down">
+                    <use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+                  </svg>
+                </button>
+              </div>
 
-              <button type="button" class="exchange__arrow">
-                <svg class="icon icon--arrow-down">
-                  <use href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
-                </svg>
-              </button>
-            </div>
-
-            <div class="exchange__row">
-              <input class="exchange__input" type="number">
-              <div class="exchange__token">
-                <img src="./../img/exchange/logos_bitcoin.svg" alt="bitcoin">
+              <div class="exchange__row">
+                <input class="exchange__input" type="number">
+                <div class="exchange__token">
+                  <img src="./../img/exchange/logos_bitcoin.svg" alt="bitcoin">
+                </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
+
+
 
         <div class="form__group">
           <label class="form__label" for="input3">Email</label>

@@ -49,6 +49,14 @@
 
   &__Item-btn {
     margin-top: 24px;
+    width: fit-content;
+    min-width: 232px;
+
+    @media (hover:hover) {
+      &.btn-outline:hover {
+        border-color: transparent;
+      }
+    }
   }
 
   // .works__item-num

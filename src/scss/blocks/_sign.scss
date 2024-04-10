@@ -231,8 +231,9 @@
   &__picture-1 {
     position: absolute;
     z-index: -2;
-    right: 0;
-    top: 10%;
+    top: calc(50% - 20%);
+    left: calc(50% + 20%);
+    transform: translate(-50%, -50%);
 
     img {
       max-width: max-content;
@@ -258,8 +259,13 @@
   &__picture-3 {
     position: absolute;
     z-index: 1;
-    bottom: 20%;
-    left: 6%;
+    top: calc(50% + 18%);
+    left: calc(50% - 30%);
+    transform: translate(-50%, -50%);
+
+    @media (min-width: 1900px) {
+      left: calc(50% - 20%);
+    }
 
     img {
       max-width: max-content;
@@ -311,6 +317,7 @@
     align-items: center;
     width: 100%;
     background-color: var(--white-color);
+    border: 3px solid transparent;
     border-radius: 500px;
     padding: 10px 40px;
     min-height: 48px;
@@ -318,11 +325,20 @@
     font-size: 14px;
     line-height: 100%;
     color: #2e384d;
+    transition: border 0.2s ease-in, color 0.2s ease-in;
+
 
     img {
       width: 24px;
       height: 24px;
       object-fit: cover;
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        border-color: var(--green);
+        color: var(--green);
+      }
     }
 
     @include small-mobile {

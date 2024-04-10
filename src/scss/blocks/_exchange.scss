@@ -48,13 +48,21 @@
   }
 
   &__form-arrow {
-    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    margin: -10px auto;
     text-align: center;
+
+    @include tablet {
+      transform: rotate(-90deg);
+      margin: auto 0;
+    }
 
     @include small-mobile {
       width: 24px;
       height: 24px;
       margin: -10px auto;
+      transform: rotate(0);
     }
   }
 
@@ -64,7 +72,7 @@
     display: grid;
     row-gap: 16px;
     flex: 0 1 710px;
-    padding: 60px;
+    padding: 48px 60px;
     border-radius: 20px;
     background-color: #0c1220;
 
@@ -92,13 +100,27 @@
     }
   }
 
+  &__block-wrapper {
+    display: grid;
+    row-gap: 16px;
+
+    @include tablet {
+      grid-template-columns: 1fr 40px 1fr;
+      column-gap: 10px;
+    }
+
+    @include small-mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
   // .exchange__block
 
   &__block {
 
-    &:not(:last-child) {
-      margin-bottom: 24px;
-    }
+    // &:not(:last-child) {
+    //   margin-bottom: 24px;
+    // }
   }
 
   // .exchange__block-label

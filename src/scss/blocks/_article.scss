@@ -12,6 +12,10 @@
       row-gap: 24px;
       margin-bottom: 24px;
     }
+
+    @include small-mobile {
+      row-gap: 16px;
+    }
   }
 
   // .article__labels
@@ -98,6 +102,11 @@
     column-gap: 120px;
     row-gap: 40px;
     flex-wrap: wrap;
+
+    @include small-mobile {
+      row-gap: 16px;
+      column-gap: 40px;
+    }
   }
 
   // .article__data

@@ -129,6 +129,11 @@
         border-color: var(--green);
       }
     }
+
+    &:focus,
+    &:active {
+      border-color: var(--green);
+    }
   }
 
   // .form__textarea
